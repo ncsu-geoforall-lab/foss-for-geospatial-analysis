@@ -1,0 +1,522 @@
+<!doctype html>
+<html lang="en">
+<!-- This is a generated file. Do not edit. -->
+
+    <head>
+        <meta charset="utf-8">
+
+        <title>Open Source Software for GIS</title>
+
+        <meta name="description" content="Geospatial Analysis and Modeling: Open Source Software for GIS">
+        <meta name="author" content="Helena Mitasova">
+
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <link rel="stylesheet" href="css/reveal.css">
+        <link rel="stylesheet" href="css/theme/simple.css" id="theme">
+
+        <!-- For syntax highlighting -->
+        <link rel="stylesheet" href="lib/css/zenburn.css">
+
+        <!-- If the query includes 'print-pdf', include the PDF print sheet -->
+        <script>
+            if( window.location.search.match( /print-pdf/gi ) ) {
+                var link = document.createElement( 'link' );
+                link.rel = 'stylesheet';
+                link.type = 'text/css';
+                link.href = 'css/print/pdf.css';
+                document.getElementsByTagName( 'head' )[0].appendChild( link );
+            }
+        </script>
+
+        <!--[if lt IE 9]>
+        <script src="lib/js/html5shiv.js"></script>
+        <![endif]-->
+
+        <style>
+        * {
+            /*font-family: Verdana, Geneva, sans-serif !important;*/
+        }
+        body {
+        /*background-color: #FFF !important;*/
+        /*
+          background-image: url("pictures/elevation-nagshead.gif");
+          background-repeat: no-repeat;
+          background-position: left bottom;*/
+        }
+        .reveal section img {
+            background: transparent;
+            border: 0;
+            box-shadow: 0 0 0 rgba(0, 0, 0, 0.15);
+        }
+        /* for standalone frame */
+        /*
+        iframe {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        */
+        /* display: inline; background-color: #002B36; padding: 0px; margin: 0px */
+        .rounded-corners {
+            border: 0px solid black;
+            border-radius: 5px;
+            -moz-border-radius: 5px;
+            -khtml-border-radius: 5px;
+            -webkit-border-radius: 5px;
+        }
+        a {
+            color: #060 !important;
+        }
+        a:hover {
+            color: #060 !important;
+            text-decoration: underline !important;
+        }
+        h1, h2, h3, h4, h5 {
+            text-transform: none !important;
+            /* word-break: keep-all; text-transform: none; font-size: 200%; line-height: 110%; */
+            color: #060 !important;
+            /* color: #444 !important; */ /* grey from the wab page */
+            font-weight: bold !important;
+            -webkit-hyphens: none !important;
+            -moz-hyphens: none !important;
+            -ms-hyphens: none !important;
+            hyphens: none !important;
+            line-height: 110% !important;
+        }
+        .reveal .progress span {
+            background-color: #060 !important;
+        }
+        /* predefined element positioning */
+        .top {
+            /*position: relative;*/
+            top: 5%;
+            height: 45%; /* is the height even needed? */
+        }
+        .bottom {
+            height: 45%;
+        }
+        .ne {
+            position: absolute;
+            top: 5%;
+            right: 5%;
+            height: 45%;
+            width: 45%;
+        }
+        .nw {
+            position: absolute;
+            top: 5%;
+            left: 5%;
+            height: 45%;
+            width: 45%;
+        }
+        .se {
+            position: absolute;
+            bottom: 5%;
+            right: 5%;
+            height: 45%;
+            width: 45%;
+        }
+        .sw {
+            position: absolute;
+            bottom: 5%;
+            left: 5%;
+            height: 45%;
+            width: 45%;
+        }
+
+        /* classes for sections with predefined elements */
+        /* using !important because, reveal styles are applied afterwards  */
+        .right, .textimg > img, .textimg > video, .textimg > iframe, .imgtext > p, .imgtext > ul, .imgtext > ol, .imgtext > div {
+            float: right;
+            text-align: left;
+            max-width: 47% !important;
+        }
+        .left, .imgtext > img, .imgtext > video, imgtext > iframe, .textimg > p, .textimg > ul, .textimg > ol, .textimg > div {
+            float: left;
+            text-align: left;
+            max-width: 47% !important;
+        }
+        li > ul, li > ol {
+            font-size: 85% !important;
+            line-height: 110% !important;
+        }
+        .small {
+            font-size: smaller !important;
+            color: gray;
+            margin: 0.1em !important;
+        }
+        .credit {
+            font-size: small !important;
+            color: gray;
+            margin: 0.1em !important;
+        }
+        </style>
+    </head>
+
+    <body>
+
+        <div class="reveal">
+
+            <!-- Any section element inside of this container is displayed as a slide -->
+            <div class="slides">
+<section>
+    <h2>Geospatial Analysis and Modeling:</h2>
+    <h3>Open Source Software for GIS</h3>
+    <h4 style="margin-top: 0.5em">
+        </h3>
+    <p class="title-foot">
+        Helena Mitasova<br>
+        <a href="http://www.ncsu.edu/" title="North Carolina State University">NCSU</a>
+        MEAS
+    </p>
+    <p>August, 2012</p>
+</section>
+<section>
+<h2>Headings</h2>
+
+The Foundations of the General Public License:
+Nobody should be restricted by the software they use.
+GPL was written by Richard Stallman in 1989 for GNU project
+
+There are four freedoms that every user should have:
+<ul>
+    <li>the freedom to use the software for any purpose,
+    <li>the freedom to change the software to suit your needs,
+    <li>the freedom to share the software 
+    <li>the freedom to share the changes you make.
+</ul>
+
+<p>
+all four lead to >>> Free software
+
+<p>
+open source or without pay is not enough
+</section>
+
+<section>
+<h2>Free and Open Source Software</h2>
+
+<p>
+Software that is free to run, study, modify and distribute
+
+<p>
+Free means freedom: free is a matter of liberty not price
+
+<p>
+It can be commercial (e.g., Red Hat Linux) but not proprietary
+
+Licenses: 
+<ul>
+    <li>GPL - cannot be combined with closed software binary
+    <li>Lesser GPL (LGPL) - allows combined binary, but the GPL part must remain free
+    <li>Public domain - can be modified, closed and sold as proprietary http://www.gnu.org/licenses/license-list.html#SoftwareLicenses 
+
+<p>
+GRASS GIS – GPL, GDAL - LGPL 
+</ul>
+</section>
+
+<section>
+<h2>FOSS development</h2>
+<ul>
+    <li>open community of developers and users
+    <li>flexible, interoperable and portable
+    <li>extensive supporting software tools for code management, bug tracking, documentation, collaboration
+    <li>browse the source code on-line
+</ul>
+
+<p>
+Different from OGC - Open Geospatial Consortium
+sets standards for interoperability (similar to Open GL)
+both proprietary and open source software follows these 
+standards where it is good for them
+OSGeo and OGC coordinate their activities
+</section>
+
+<section>
+<h2>Google Summer of Code</h2>
+<p>
+http://socghop.appspot.com/gsoc/homepage/google/gsoc2011 
+
+<p>
+Google has provided funding ($4500 per student) for the open source projects since 2006 through global competition. 
+ 
+ <p>
+Number of projects: 175, Students: 1115
+Mentors un-conference: self-organized
+
+<p>
+example OSGeo projects: wxNVIZ, v.generalize, WMS for GRASS, 
+
+<p>
+http://grass.osgeo.org/wiki/WxNviz_GSoC_2011 (3 years)
+</section>
+
+<section>
+<h2>Code sprints</h2>
+Developers working together
+<ul>
+    <li>open participation
+    <li>self organized through wiki
+    <li>software development, documentation, data
+    <li>often associated with conferences
+<ul>
+
+<p>
+Examples: Prague, Italy, New York, Montreal
+http://wiki.osgeo.org/wiki/Bolsena_Code_Sprint_2010
+http://grass.osgeo.org/wiki/GRASS_Community_Sprint_Prague_2011
+</section>
+<section>
+<h2>Open Source Geospatial Foundation</h2>
+<p>
+By 2005 there was more than 200 foss4g projects: need for selection and organization
+
+<p>
+Founding projects (February 2006):<br>
+GDAL/OGR, GeoTools, GRASS, Mapbender, MapBuilder, MapGuide Open Source (Autodesk), MapServer, OSSIM
+
+<p>
+Mission: To support the development of open source 
+geospatial software and promote its widespread use.
+</section>
+
+<section>
+<h2>Open Source Geospatial Foundation</h2>
+<p>
+Web Mapping:<br>
+deegree, geomajas, GeoServer, MapBuilder, Mapbender, MapFish, MapGuide Open Source, MapServer, OpenLayers
+<p>
+Desktop Applications<br>
+GRASS GIS, Quantum GIS, gvSIG
+<p>
+Geospatial Libraries<br>
+FDO (feature data objects), GDAL/OGR, GEOS, GeoTools, MetaCRS, OSSIM, PostGIS
+<p>
+Metadata Catalog<br>
+GeoNetwork
+<p>
+Data: Open street map
+<p>
+incubation: license issues cleanup in the code base
+</section>
+
+<section>
+<h2>Example Desktop System</h2>
+Portability, interoperability, Geostatistics Predictive modeling,
+View Interact Teach, Spatial Analysis Modeling, Visualize,
+Database engine: Tables, attributes, External data
+</section>
+
+<section>
+<h2>WebGIS integrated services</h2>
+update with openlayers, mapfish,python2web
+PyWPS: implementation of OGS Web Processing Service standard 
+in Python programming language. it has native support for GRASS GIS
+WMS/WFS/WMC/SLD Geoserver/Mapserver OpenLayers
+</section>
+
+<section>
+<h2>GRASS: desktop FOSSGIS</h2>
+<p>
+1984 developed at USArmy CERL as land management support system, evolved into general purpose GIS
+<p>
+1999 GPL, international team of developers 
+<p>
+Portable: all common OS, 32/64bit, code in C
+<p>
+Interoperability: through GDAL
+<p>
+Web-based infrastructure: SVN with on-line source code browser, bug reports, users and programmers manual, wiki, IRC
+
+<p>
+Commercial support:
+</section>
+
+<section>
+<h2>GRASS6 spatial data types</h2>
+<p>
+2D raster and imagery
+2D/3D topological vector 
+3D raster (voxels)
+</section>
+
+<section>
+<h2>GRASS6 functionality</h2>
+<ul>
+    <li>fully integrated 350+ modules 
+    <li>add-ons managed on wiki 
+    <li>GEM (GRASS extension manager)
+
+    <li>raster: map algebra, DEM analysis, flow, buffers, neighbourhood analysis, solar, cost surfaces, covariance, 
+    <li>image: rectification, multispectral, reclassification, fft
+    <li>vector: buffers, overlays, conversions, networks,
+    <li>DBMS: attribute management, SQL
+    <li>transformations: projections, raster-vector conversions, interpolation/approximation
+    <li>visualization: 2D display, 3D visualization, ps maps
+    <li>WMS support r.in.wms (web map service, read maps directly from the web), Google earth through v.out.ogr
+</ul>
+</section>
+
+<section>
+<h2>On-line tools</h2>
+<p>
+Project GEOPARK:
+Mapserver implementation provides on-line access to various geospatial data
+including radiotracked deer paths (red lines) for the Park of Stelvio, Italy.
+</section>
+
+<section>
+<h2>GRASS Quick Start</h2>
+<p>
+Database structure
+
+wxGUI
+
+Computational region
+
+Preferences
+
+Getting started video, nviz video
+
+In-class : watershed analysis assignment
+
+see also
+http://courses.ncsu.edu/mea582/common/GIS_anal_assign/GIS_Anal_Assignall.html 
+</section>
+
+<section>
+<h2>OSGeo, GRASS summary</h2>
+<ul>
+    <li>FOSS: Software that is free to run, study, modify and distribute
+    <li>Open development, GSoC, Code sprints
+    <li>OSGeo – foundation for FOSS4G
+    <li>WebGIS and desktop systems
+    <li>GRASS – oldest general purpose open source GIS
+    <li>see sponsors at
+        http://2011.foss4g.org/
+</ul>
+</section>
+<!-- This is a generated file. Do not edit. -->
+        </div>  <!-- slides -->
+
+    </div>  <!-- reveal -->
+
+        <script src="lib/js/head.min.js"></script>
+        <script src="js/reveal.js"></script>
+
+        <script>
+
+            // Full list of configuration options available here:
+            // https://github.com/hakimel/reveal.js#configuration
+            Reveal.initialize({
+                // Display controls in the bottom right corner
+                controls: false,
+
+                // Display a presentation progress bar
+                progress: true,
+                
+                center: true,
+                
+                // Display the page number of the current slide
+                slideNumber: false,
+
+                // Enable the slide overview mode
+                overview: true,
+
+                // Turns fragments on and off globally
+                fragments: true,
+
+                // The "normal" size of the presentation, aspect ratio will be preserved
+                // when the presentation is scaled to fit different resolutions. Can be
+                // specified using percentage units.
+                // width: 960,
+                // height: 700,
+                
+                // Factor of the display size that should remain empty around the content
+                margin: 0.05,  // increase?
+
+                // Bounds for smallest/largest possible scale to apply to content
+                minScale: 0.5,
+                maxScale: 5.0,
+
+                theme: Reveal.getQueryHash().theme,  // available themes are in /css/theme
+                transition: Reveal.getQueryHash().transition || 'none', // default/cube/page/concave/zoom/linear/fade/none
+
+                // Push each slide change to the browser history
+                history: true,
+                // Enable keyboard shortcuts for navigation
+                keyboard: true,
+
+                // Vertical centering of slides
+                center: true,
+
+                // Enables touch navigation on devices with touch input
+                touch: true,
+
+                // Loop the presentation
+                loop: false,
+                // Flags if the presentation is running in an embedded mode,
+                // i.e. contained within a limited portion of the screen
+                embedded: false,
+
+                // Number of milliseconds between automatically proceeding to the
+                // next slide, disabled when set to 0, this value can be overwritten
+                // by using a data-autoslide attribute on your slides
+                autoSlide: 0,
+
+                // Stop auto-sliding after user input
+                autoSlideStoppable: true,
+
+                // Enable slide navigation via mouse wheel
+                mouseWheel: false,
+
+                // Hides the address bar on mobile devices
+                hideAddressBar: true,
+
+                // Opens links in an iframe preview overlay
+                previewLinks: false,
+
+                // Transition speed
+                transitionSpeed: 'default', // default/fast/slow
+
+                // Transition style for full page slide backgrounds
+                backgroundTransition: 'none', // default/none/slide/concave/convex/zoom
+
+                // Number of slides away from the current that are visible
+                viewDistance: 3,
+
+                // Parallax background image
+                //parallaxBackgroundImage: '', // e.g. "'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg'"
+
+                // Parallax background size
+                //parallaxBackgroundSize: '' // CSS syntax, e.g. "2100px 900px"
+
+                // Optional libraries used to extend on reveal.js
+                dependencies: [
+                    { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                    { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+                    { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+                    { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+                    { src: 'plugin/math/math.js', async: true }
+                ],
+
+                math: {
+                    mathjax: 'http://cdn.mathjax.org/mathjax/latest/MathJax.js',
+                    config: 'TeX-AMS_HTML-full'  // See http://docs.mathjax.org/en/latest/config-files.html
+                }
+            });
+
+        </script>
+        <script type="text/javascript"
+    src="https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+    </body>
+</html>
