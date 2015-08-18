@@ -1,6 +1,6 @@
 ./copy-common-files.py --dst-dir=build
 ./build-slides.py --outdir=build \
-    --title="Open Source Software for GIS" \
-    --meta-description="Geospatial Analysis and Modeling: Open Source Software for GIS" \
-    --meta-author="Helena Mitasova" \
+    --title="Introduction to FOSS4G" \
+    --meta-description="Introduction to Free, Libre and Open Source Software: for Geospatial Analysis and Modeling" \
+    --meta-author="Helena Mitasova and Vaclav Petras" \
     index.html
