@@ -448,24 +448,40 @@ ZOO-Project or PyWPS <span class="small">(OGC WPS, native support for GRASS GIS)
 </section>
 
 <section>
-<h2>GRASS GIS</h2>
+<h2>GRASS GIS history</h2>
 <ul>
 <li>1984 development started at US Army CERL as land management support system
 <li>evolved into general purpose GIS
 <li>1999 GNU GPL, international team of developers
+</section>
+
+<section>
+<h2>GRASS GIS</h2>
+<ul>
 <li>portable: different OS, 32/64bit, code in C and Python
 <li>web-based infrastructure
 <ul>
-    <li>Subversion with online source code browser, feature requests, bug reports,
+    <li>Subversion code repository with online source code browser, feature requests, bug reports,
         users and programmers manual, wiki, IRC
 </ul>
-<li>Commercial support:
+<li>support
 <ul>
-    <li>Faunalia, Tekmap Consulting, GDF Hannover, GIS Mentors, ..., freelancers
+    <li>community
+    <ul>
+        <li>
+            <a href="https://lists.osgeo.org/mailman/listinfo/grass-user">user mailing list</a>,
+            <a href="http://gis.stackexchange.com/questions/tagged/grass">GIS Stack Exchange</a>,
+            <a href="https://plus.google.com/u/0/communities/111147786674687562495">Google+ community</a>,
+            ...
+    </ul>
+    <li>commercial
+    <ul>
+        <li>Faunalia, Tekmap Consulting, GDF Hannover, GIS Mentors, ... freelancers
+    </ul>
 </ul>
-<li>Sponsors:
+<li>sponsors
 <ul>
-    <li>Municipality of Trento, Fondazione Edmund Mach, Google via OSGeo, ..., individuals
+    <li>Municipality of Trento, Fondazione Edmund Mach, Google via OSGeo, ... individuals
 </ul>
 <ul>
 </section>
@@ -486,39 +502,67 @@ ZOO-Project or PyWPS <span class="small">(OGC WPS, native support for GRASS GIS)
     <li>current version 7
     <li>almost 500 modules <!-- 7.0.1 -->
     <li>more modules in GRASS GIS Addons repository
-    <ul>
-    <li>raster: map algebra, DEM analysis, flow, buffers, neighbourhood analysis, solar, cost surfaces, covariance,
-    <li>image: rectification, multispectral, reclassification, fft
-    <li>vector: buffers, overlays, conversions, networks,
-    <li>DBMS: attribute management, SQL
-    <li>transformations: projections, raster-vector conversions, interpolation/approximation
-    <li>visualization: 2D display, 3D visualization, ps maps
-    <li>WMS support r.in.wms (web map service, read maps directly from the web), Google earth through v.out.ogr
-    </ul>
+    <li>wide range of functions
+    <dl class="small">
+        <dt>raster</dt>
+        <dd>
+            map algebra, DEM analysis, flow, buffers, neighbourhood analysis, solar, cost surfaces, covariance
+        </dd>
+        <dt>image</dt>
+        <dd>
+            rectification, multispectral, reclassification, FFT
+        </dd>
+        <dt>vector</dt>
+        <dd>
+            buffers, overlays, conversions, networks,
+        </dd>
+        <dt>database</dt>
+        <dd>
+            attribute management, SQL
+        </dd>
+        <dt>transformations</dt>
+        <dd>
+            projections, raster-vector conversions, interpolation/approximation
+        </dd>
+        <dt>visualization</dt>
+        <dd>
+            2D display, 3D visualization, PS and PDF maps
+        </dd>
+        <dt>interoperability</dt>
+        <dd>
+            WMS support (read maps directly from the web),
+            export to different formats (and use e.g. in Google Earth)
+        </dd>
+    </dl>
 </ul>
 </section>
 
 <section>
-<h2>GRASS GIS Quick Start</h2>
+<h2>GRASS GIS Basics</h2>
 <ul>
-    <li>database structure:
+    <li>database structure
     <ul>
         <li>based on cartographic projections and user's need to organize data
-        <li>example:
+        <li>example
         <ul>
             <li>north_carolina_state_plane_meters (location)
             <ul>
-                <li>mapset A
-                <li>mapset B
+                <li>new_highway_project (mapset)
+                <ul>
+                    <li>elevation (raster)
+                    <li>streets (vector)
+                </ul>
+                <li>wake_county (mapset)
             </ul>
             <li>usa_latlon (location)
         </ul>
     </ul>
-    <li>interfaces:
+    <li>interfaces
     <ul>
         <li>Graphical User Interface (now wxGUI, other GUIs in the past)
-        <li>Command Line Interface
+        <li>Command Line Interface (examples in manual)
         <li>Application Programming Interface (C for hard work, Python for scripting)
+        <li>designed for easy transition in between the interfaces
     </ul>
     <li>computational region
     <ul>
@@ -551,7 +595,7 @@ ZOO-Project or PyWPS <span class="small">(OGC WPS, native support for GRASS GIS)
         <li>software that is free to run, study, modify and distribute
         <li>solutions that are not depended on a particular company
         <li>open development, code sprints, GSoC, ...
-        <li>driven by user needs, not seller needs
+        <li>driven by user needs, not vendor needs
     </ul>
     <li>OSGeo
     <ul>
