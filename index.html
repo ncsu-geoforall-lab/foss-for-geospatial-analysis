@@ -78,6 +78,7 @@
 <li>the term <em>FOSS</em> is often used in geospatial community
 <ul>
     <li>free refers to user's freedom
+    <li><em>FOSS4G</em> (free and open source software for geospatial)
 </ul>
 
 </ul>
@@ -312,23 +313,70 @@ geospatial software and promote its widespread use.
 </section>
 
 <section>
-<h2>Open Source Geospatial Foundation</h2>
-<p>
-Web Mapping:<br>
-deegree, geomajas, GeoServer, MapBuilder, Mapbender, MapFish, MapGuide Open Source, MapServer, OpenLayers
-<p>
-Desktop Applications<br>
-GRASS GIS, Quantum GIS, gvSIG
-<p>
-Geospatial Libraries<br>
-FDO (feature data objects), GDAL/OGR, GEOS, GeoTools, MetaCRS, OSSIM, PostGIS
-<p>
-Metadata Catalog<br>
-GeoNetwork
-<p>
-Data: Open street map
-<p>
-incubation: license issues cleanup in the code base
+<h2>OSGeo projects</h2>
+<dl>
+<dt>Web Mapping</dt>
+<dd>
+<a href="http://www.deegree.org/">deegree</a>,
+<a href="http://www.geomajas.org/">geomajas</a>,
+<a href="http://geoserver.org/">GeoServer</a>,
+<a href="http://www.mapserver.org/">MapServer</a>,
+<a href="http://openlayers.org/">OpenLayers</a>,
+<a href="http://pywps.wald.intevation.org/">PyWPS</a>,
+<a href="http://zoo-project.org/">ZOO-Project</a>
+</dd>
+<dt>Desktop Applications</dt>
+<dd>
+<a href="http://grass.osgeo.org/">GRASS GIS</a>,
+<a href="https://marble.kde.org/">Marble</a>,
+<a href="http://qgis.osgeo.org">QGIS</a>,
+<a href="http://gvsig.com">gvSIG</a>,
+<a href="http://opticks.org">Optics</a>
+</dd>
+<dt>Geospatial Libraries and Databases</dt>
+<dd>
+<a href="http://fdo.osgeo.org">FDO</a>,
+<a href="http://gdal.org/">GDAL</a>,
+<a href="http://geos.osgeo.org">GEOS</a>,
+<a href="http://geotools.org/">GeoTools</a>,
+<a href="https://trac.osgeo.org/ossim/">OSSIM</a>,
+<a href="http://postgis.net/">PostGIS</a>,
+<a href="https://www.orfeo-toolbox.org/">Orfeo Toolbox</a>,
+<a href="http://rasdaman.org/">rasdaman</a>
+</dd>
+<dt>Metadata Catalogs</dt>
+<dd>
+<a href="http://geonetwork-opensource.org/">GeoNetwork</a>,
+<a href="http://pycsw.org/">pycws</a>
+</dd>
+</dl>
+
+<p class="small">
+Some projects are in incubation (code and license cleanup, small community).
+<!-- some projects omitted -->
+</section>
+
+<section>
+<h2>FOSS4G Landscape</h2>
+<dl>
+<dt><a href="http://osgeo.org/">OSGeo</a></dt>
+<dd>
+support the collaborative development
+</dd>
+<dt><a href="http://openstreetmap.org/">OpenStreetMap</a></dt>
+<dd>
+data, applications, services
+</dd>
+<dt><a href="https://locationtech.org/">LocationTech</a></dt>
+<dd>
+working group at Eclipse Foundation
+</dd>
+<dt>Individual projects and communities</dt>
+<dd>
+projects and communities exist on their own
+</dd>
+</dl>
+
 </section>
 
 <section>
@@ -343,13 +391,15 @@ QGIS, GRASS GIS
 R (for geostatistics and predictive modeling)
 </dd>
 <dt>database</dt>
-<dd>SQLite, PostgreSQL with PostGIS</dd>
+<dd>
+SQLite, PostgreSQL with PostGIS
+</dd>
 <dt>graphics</dt>
 <dd>
 Inkscape, Gimp, ImageMagic
 </dd>
 </dl>
-<ul>
+<ul class="small">
     <li>Portability: works on Linux, Mac, Windows
     <li>Interoperability: programs designed to work with others
 </ul>
@@ -361,12 +411,32 @@ Database engine: Tables, attributes, External data
 </section>
 
 <section>
-<h2>WebGIS integrated services</h2>
-update with openlayers, mapfish, python2web
-<p>
-PyWPS: implementation of OGS Web Processing Service standard
-in Python programming language. it has native support for GRASS GIS
-WMS/WFS/WMC/SLD Geoserver/Mapserver OpenLayers
+<h2>Example WebGIS System</h2>
+
+<dl>
+<dt>backend</dt>
+<dd>
+GRASS GIS, R, SAGA GIS
+</dd>
+<dt>front end</dt>
+<dd>
+OpenLayers, Django
+</dd>
+<dt>database</dt>
+<dd>
+PostgreSQL with PostGIS
+</dd>
+<dt>server</dt>
+<dd>
+ZOO-Project or PyWPS <span class="small">(OGC WPS, native support for GRASS GIS)</span>
+</dd>
+</dl>
+
+<ul class="small">
+    <li>Flexibility: standards and open formats allows to switch different components
+    <li>Scalability: can be copied to more machines at no cost
+</ul>
+
 </section>
 
 <section>
@@ -393,20 +463,25 @@ WMS/WFS/WMC/SLD Geoserver/Mapserver OpenLayers
 </section>
 
 <section>
-<h2>GRASS6 spatial data types</h2>
-<p>
-2D raster and imagery
-2D/3D topological vector
-3D raster (voxels)
+<h2>GRASS GIS spatial data types</h2>
+<ul>
+    <li>2D raster (imagery, DEMs, ...)
+    <li>2D/3D topological vector
+    <li>3D raster (voxels, volumes, soil properties, ...)
+    <li>time series (of anything from above)
+</ul>
+
+
+
 </section>
 
 <section>
-<h2>GRASS6 functionality</h2>
+<h2>GRASS GIS functionality</h2>
 <ul>
-    <li>fully integrated 350+ modules
-    <li>add-ons managed on wiki
-    <li>GEM (GRASS extension manager)
-
+    <li>current version 7
+    <li>almost 500 modules <!-- 7.0.1 -->
+    <li>more modules in GRASS GIS Addons repository
+    <ul>
     <li>raster: map algebra, DEM analysis, flow, buffers, neighbourhood analysis, solar, cost surfaces, covariance,
     <li>image: rectification, multispectral, reclassification, fft
     <li>vector: buffers, overlays, conversions, networks,
@@ -414,6 +489,7 @@ WMS/WFS/WMC/SLD Geoserver/Mapserver OpenLayers
     <li>transformations: projections, raster-vector conversions, interpolation/approximation
     <li>visualization: 2D display, 3D visualization, ps maps
     <li>WMS support r.in.wms (web map service, read maps directly from the web), Google earth through v.out.ogr
+    </ul>
 </ul>
 </section>
 
@@ -473,7 +549,10 @@ including radiotracked deer paths (red lines) for the Park of Stelvio, Italy.
 <section>
 <h2>OSGeo, GRASS summary</h2>
 <ul>
-    <li>FOSS: Software that is free to run, study, modify and distribute
+    <li>FOSS
+    <ul>
+        <li>software that is free to run, study, modify and distribute
+    </ul>
     <li>Open development, GSoC, Code sprints
     <li>OSGeo – foundation for FOSS4G
     <li>WebGIS and desktop systems
