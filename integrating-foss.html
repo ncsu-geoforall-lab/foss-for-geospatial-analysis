@@ -466,7 +466,7 @@ Listing only geospatial courses where presentation authors are involved.
 </section>
 
 
-<section>
+<section class="textimg">
 <h2>UAV/lidar Data Analytics</h2>
 
 <ul>
@@ -474,7 +474,6 @@ Listing only geospatial courses where presentation authors are involved.
 <li>GRASS GIS, Python
 </ul>
 
-<img src="img/edu/dem.jpg">
 <img src="img/edu/uav.jpg">
 
 </section>
@@ -546,10 +545,17 @@ Listing only geospatial courses where presentation authors are involved.
     </ul>
 </ul>
 
+<p>
+Command line (in the instructions)
+
 <pre><code>r.slope.apsect elevation=elev_ned10m_nn aspect=aspect_ned10m_nn
 </code></pre>
 
-<pre><code>gscript.run_command('r.slope.apsect',
+<p>
+Python
+
+<pre><code>import grass.script as gscript
+gscript.run_command('r.slope.apsect',
                     elevation='elev_ned10m_nn',
                     aspect='aspect_ned10m_nn')
 </code></pre>
@@ -565,10 +571,12 @@ Ross K. Meentemeyer and Helena Mitasova.
 
 <em>Integrating Free and Open Source Solutions into Geospatial Science Education</em>.
 
+<span class="small">
 North Carolina State University.
 <em>In</em>: ISPRS International Journal of Geo-Information. 2015.
+</span>
 
-<p>
+<p class="small">
 Open Access,
 <a href="http://dx.doi.org/10.3390/ijgi4020942">doi:10.3390/ijgi4020942</a>
 
@@ -846,9 +854,9 @@ North Carolina State University, USA
     </ul>
 </ul>
 
-<img src="img/general/open_up_book.png">
-
-<p class="credit">Image credit: <a href="https://opensource.com/">opensource.com</a></p>
+<a href="https://opensource.com/" title="Image credit: opensource.com">
+    <img src="img/general/open_up_book.png" width="30%">
+</a>
 
 </section>
 
