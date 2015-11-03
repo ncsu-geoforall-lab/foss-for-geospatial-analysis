@@ -374,10 +374,17 @@ Listing only geospatial courses where presentation authors are involved.
     </ul>
 </ul>
 
+<p>
+Command line (in the instructions)
+
 <pre><code>r.slope.apsect elevation=elev_ned10m_nn aspect=aspect_ned10m_nn
 </code></pre>
 
-<pre><code>gscript.run_command('r.slope.apsect',
+<p>
+Python
+
+<pre><code>import grass.script as gscript
+gscript.run_command('r.slope.apsect',
                     elevation='elev_ned10m_nn',
                     aspect='aspect_ned10m_nn')
 </code></pre>
