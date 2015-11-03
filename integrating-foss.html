@@ -119,6 +119,7 @@ Open Sourcing Is No Longer Optional, Not Even for Apple
 <section>
 <h2>Courses at North Carolina State University</h2>
 
+<p class="small">
 Listing only geospatial courses where presentation authors are involved.
 
 </section>
@@ -364,6 +365,27 @@ Listing only geospatial courses where presentation authors are involved.
 
 
 <section>
+<h2>GRASS GIS advantage for starting with Python</h2>
+
+<ul class="small">
+    <li>GRASS GIS workflow recorded as commands.
+    <ul>
+        <li>Python interface for GRASS GIS follows the command line interface.
+    </ul>
+</ul>
+
+<pre><code>r.slope.apsect elevation=elev_ned10m_nn aspect=aspect_ned10m_nn
+</code></pre>
+
+<pre><code>gscript.run_command('r.slope.apsect',
+                    elevation='elev_ned10m_nn',
+                    aspect='aspect_ned10m_nn')
+</code></pre>
+
+</section>
+
+
+<section>
 <h2>More details in the paper</h2>
 
 Vaclav Petras, Anna Petrasova, Brendan Harmon,
@@ -418,6 +440,11 @@ Open Access,
             <li>use OGC standards in GIS, W3C in web development
         </ul>
     <li>explicitly allow and support using open source in students' projects
+    <li>in classes, use open source for secondary tasks
+        <ul>
+            <li>Inkscape for vector graphics
+        </ul>
+    <li>use open source yourself
 </ul>
 
 </section>
@@ -440,6 +467,20 @@ Open Access,
     <li>allow students to pick one or the other
 </ul>
 
+</section>
+
+
+<section>
+<h2>Educate educators</h2>
+
+<ul>
+    <li>Start with educating the teachers.
+    <li>You should have enough people to fill in for the current people teaching it (same as for any other courses).
+    <li>Instructors involvement in community is more important
+        than students in involvement community and must come first.
+    <li>Get sign up for a mailing list, e.g.
+        <a href="https://lists.osgeo.org/listinfo/grass-user">grass-user</a> or
+        <a href="https://lists.osgeo.org/listinfo/qgis-user">qgis-user</a>.
 </section>
 
 
@@ -617,20 +658,6 @@ North Carolina State University, USA
     <li>Google Summer of Code
 </ul>
 
-</section>
-
-
-<section>
-<h2>Educate educators</h2>
-
-<ul>
-    <li>Start with educating the teachers.
-    <li>You should have enough people to fill in for the current people teaching it (same as for any other courses).
-    <li>Instructors involvement in community is more important
-        than students in involvement community and must come first.
-    <li>Get sign up for a mailing list, e.g.
-        <a href="https://lists.osgeo.org/listinfo/grass-user">grass-user</a> or
-        <a href="https://lists.osgeo.org/listinfo/qgis-user">qgis-user</a>.
 </section>
 
 
