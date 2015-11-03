@@ -187,21 +187,16 @@ Listing only geospatial courses where presentation authors are involved.
 </section>
 
 
-<section>
+<section class="textimg">
 <h2>Geospatial Analysis and Modeling</h2>
 
 <ul>
-    <li>started in 2008
-    <li>on-campus and distance education
+    <li>since 2008
+    <li>on-campus and distance
     <li>every semester 30-60 students
-    <li>software:
-    <ul>
-        <li>GRASS GIS
-        <li>ArcGIS
-    </ul>
+    <li>GRASS GIS, ArcGIS
     <li>workflow for software provided
     <li>students write reports with general theory and methods
-    <li><a href="http://courses.ncsu.edu/gis582/common/">materials online</a>
 </ul>
 
 <img src="img/edu/secref.png">
@@ -254,7 +249,7 @@ Listing only geospatial courses where presentation authors are involved.
 </section>
 
 
-<section>
+<section class="textimg">
 <h2>Multidimensional Geospatial Modeling</h2>
 
 <ul>
@@ -269,40 +264,28 @@ Listing only geospatial courses where presentation authors are involved.
     XBeach, libLAS or LAStools
 </ul>
 
-<li>curriculum depends on students projects
-
 <li>new technologies:
    Tangible Landscape, NCSU Hunt Lib Teaching and Vis Lab,
    eye tracking
-<li><a href="http://courses.ncsu.edu/mea592/common/">materials online</a>
 </ul>
 
-<a href="https://www.youtube.com/channel/UCc37pVh-WE46Xkqeq-KZQsA">
-    <img src="img/edu/tangible.jpg">
-</a>
+<img src="img/edu/tangible.jpg">
 
-<a href="https://www.lib.ncsu.edu/stories/large-scale-visualization-geospatial-data">
-    <img src="img/edu/hunt_vis.jpg">
-</a>
 </section>
 
 
-<section>
+<section class="textimg">
 <h2>GIS for Designers</h2>
 
 <ul>
     <li>software in class:
     <ul>
-        <li>ArcGIS
-        <li>GRASS GIS
-        <li>Rhino (Rhinoceros)
-    </ul>
-    <li>for projects architects and designers combine a lot of tools
-    <ul>
+        <li>ArcGIS (proprietary)
+        <li>GRASS GIS (open source)
+        <li>Rhino (proprietary)
         <li>Tangible Landscape
-            (powered by GRASS GIS) was one of them
     </ul>
-    <li><a href="http://courses.ncsu.edu/lar582/common/">materials online</a>
+    <li>for projects, architects and designers usually combine a lot of tools including tools for graphics
 </ul>
 
 <img src="img/edu/designers.jpg">
@@ -314,9 +297,8 @@ Listing only geospatial courses where presentation authors are involved.
 <h2>UAV/lidar Data Analytics</h2>
 
 <ul>
-<li>under development for this fall semester
-<li>Agisoft PhotoScan in class, OpenDroneMap in projects
-<li><a href="http://ncsu-osgeorel.github.io/uav-lidar-analytics-course/">materials online</a>
+<li>Agisoft PhotoScan and experimentally OpenDroneMap
+<li>GRASS GIS, Python
 </ul>
 
 <img src="img/edu/dem.jpg">
@@ -325,30 +307,24 @@ Listing only geospatial courses where presentation authors are involved.
 </section>
 
 
-<section>
+<section class="textimg">
 <h2>Teaching materials</h2>
 
 <ul>
     <li>file format
     <ul>
-        <li>originally HTML
-        <li>selecting new one
-    <ul>
-    <li>Markdown, missing general standard
-    <li>reStructuredText, hot candidate
-    </ul>
-        <li>result: HTML (same as delivery format)
+        <li>originally HTML, selecting new
+            <ul>
+                <li>Markdown, no general standard
+                <li>reStructuredText, hot candidate
+            </ul>
+        <li>result: HTML
         <li>presentation slides in HTML5 (Reveal.js)
     </ul>
     <li>license: CC BY-SA
     <li>Git (GitHub hosted)
         for revision control, collaboration and sharing source code
-    <li>registered in
-        <a href="http://www.osgeo.org/educational_content">OSGeo Educational Content Inventory</a>
-    <li><a href="http://geospatial.ncsu.edu/osgeorel/courses.html">freely and openly available online</a>
 </ul>
-
-<img src="img/edu/osgeorel_courses_header.png">
 
 <img src="img/edu/osgeorel_courses_example.png">
 
@@ -356,20 +332,31 @@ Listing only geospatial courses where presentation authors are involved.
 
 
 <section>
-<h2>GRASS GIS advantage for teaching materials maintenance</h2>
+<h2>Teaching materials</h2>
 
 <ul>
+    <li>registered in
+        <a href="http://www.osgeo.org/educational_content">OSGeo Educational Content Inventory</a>
+    <li><a href="http://geospatial.ncsu.edu/osgeorel/courses.html">freely and openly available online</a>
+</ul>
+
+<img src="img/edu/osgeorel_courses_header.png">
+
+</section>
+
+
+<section>
+<h2>GRASS GIS advantage for teaching materials maintenance</h2>
+
+<ul class="small">
     <li>GRASS GIS workflow recorded as commands.
     <ul>
         <li>Screenshots are hard to update while text is easy to update.
         <li>GUI dialog filled according to the command.
         <li>Commands can be automatically extracted and tested.
+        <li>Text also for ArcGIS, but the names in dialogs are not part of the API, so they change.
     </ul>
 </ul>
-
-For ArcGIS we also use just text, but, unlike in GRASS GIS,
-the names in dialogs are not part of the API, so they change more often.
-(Course running since 2008.)
 
 <img src="img/edu/grass_cmd_gui.png">
 
@@ -377,16 +364,18 @@ the names in dialogs are not part of the API, so they change more often.
 
 
 <section>
-<h2>Paper</h2>
-
-Integrating Free and Open Source Solutions into Geospatial Science Education
+<h2>More details in the paper</h2>
 
 Vaclav Petras, Anna Petrasova, Brendan Harmon,
 Ross K. Meentemeyer and Helena Mitasova.
-North Carolina State University.
-In: ISPRS International Journal of Geo-Information. 2015.
 
-Open Access:
+<em>Integrating Free and Open Source Solutions into Geospatial Science Education</em>.
+
+North Carolina State University.
+<em>In</em>: ISPRS International Journal of Geo-Information. 2015.
+
+<p>
+Open Access,
 <a href="http://dx.doi.org/10.3390/ijgi4020942">doi:10.3390/ijgi4020942</a>
 
 <p>
@@ -422,18 +411,33 @@ Open Access:
 <h2>First small steps to improve courses</h2>
 
 <ul>
-    <li>allow and support using open source in students' projects
-    <li>use general terminology
-    <li>list alternative software packages for a given task
+    <li>use general terminology, instead of software specific terms
+    <li>always mention also alternative software packages for a given task
     <li>prefer standards over software specific formats and services
         <ul>
             <li>use OGC standards in GIS, W3C in web development
         </ul>
-    <li>use generally accepted open solution rather than vendor-specific solution
+    <li>explicitly allow and support using open source in students' projects
+</ul>
+
+</section>
+
+
+<section>
+<h2>First small steps to improve courses</h2>
+
+<ul>
+    <li>use generally accepted open solution
+        rather than vendor-specific solution
         <ul>
-            <li>several years ago CGA switched from VBA to Python for GIS programming classes
+            <li>several years ago CGA switched
+                from VBA to Python
+                for GIS programming classes
         </ul>
     <li>replicate part of the course using open source and have it at least as optional
+    <li>assignments or projects to create teaching material for the class
+    <li>include open source as experimental part of the course
+    <li>allow students to pick one or the other
 </ul>
 
 </section>
@@ -445,7 +449,7 @@ Open Access:
 <p class="small">examples</p>
 
 <dl>
-<dt>QGIS
+<dt>For QGIS
 <dd>
     <ul class="small">
         <li><a href="http://docs.qgis.org/2.8/en/docs/gentle_gis_introduction">Introduction to GIS with QGIS</a>
@@ -492,6 +496,24 @@ tutorial, part of broader project, workflows for GRASS GIS and ArcGIS
 <a href="https://github.com/wenzeslaus/python-grass-addon">How to write a Python GRASS GIS 7 addon</a>,
 FOSS4G Europe 2015 (Como), also delivered at NCSU
 
+<li>
+<span class="small">
+Urban growth and open source GIS,
+planned for US-IALE Asheville 2016
+
+</ul>
+
+</section>
+
+
+<section>
+<h2>OSGeo Educational Content Inventory</h2>
+
+<ul>
+    <li>List of resources created by the community
+    <li>Hosted by OSGeo Foundation
+    <li>Search at: <a href="http://www.osgeo.org/educational_content">osgeo.org/educational_content</a>
+    <li>Register your course materials, so other may find them.
 </ul>
 
 </section>
@@ -578,7 +600,7 @@ FOSS4G Europe 2015 (Como), also delivered at NCSU
         <li>Used in workshop
 <a href="https://github.com/wenzeslaus/python-grass-addon">How to write a Python GRASS GIS 7 addon</a>.
     </ul>
-<li><a href="http://jupyter.org/IPython/">Jupyter</a> (works for R, C++, ...)
+<li><a href="http://jupyter.org/IPython/">Jupyter</a> (works for Python, R, C++, ...)
 <li>
         <a href="https://github.com/jupyter/jupyterhub">JupyterHub</a>,
         <a href="https://github.com/jupyter/tmpnb">tmpnb</a>,
