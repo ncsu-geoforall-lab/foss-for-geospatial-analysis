@@ -8,6 +8,7 @@
         at
         <a href="http://geospatial.ncsu.edu/" title="Center for Geospatial Analytics website">Center for Geospatial Analytics</a>
         <br>
+        North Carolina State University
     </p>
     <p>November, 2015</p>
 </section>
@@ -34,7 +35,7 @@ Open Source has Become Mainstream but Still Drives Innovation
 
 
 <section>
-<h2>Free and open source software is a norm</h2>
+<h2>Free and open source software is ubiquitous</h2>
 
 <blockquote>
 <p>
@@ -54,7 +55,7 @@ Open Source has Become Mainstream but Still Drives Innovation
 
 
 <section>
-<h2>Free and open source software is a norm</h2>
+<h2>Free and open source software, everybody is doing it</h2>
 
 <blockquote>
 <p>
@@ -74,7 +75,7 @@ Open Sourcing Is No Longer Optional, Not Even for Apple
 
 
 <section>
-<h2>Free and open source software for science</h2>
+<h2>Free and open source software for needed in science</h2>
 <blockquote>
     <p>
         Software [...] developed as part of novel methods is as important
@@ -90,7 +91,7 @@ Open Sourcing Is No Longer Optional, Not Even for Apple
 
 
 <section>
-<h2>Free and open source software for science</h2>
+<h2>No science without free and open source software</h2>
 <blockquote>
     <p>
         The opposite of ‘open’ isn’t closed. The opposite of open is ‘broken.’
@@ -106,7 +107,7 @@ Open Sourcing Is No Longer Optional, Not Even for Apple
 
 
 <section>
-<h2>Free and open source software for science</h2>
+<h2>Free and open source software enhances science</h2>
 <ul>
     <li>Sharing</li>
     <li>Reproducibility</li>
@@ -432,28 +433,40 @@ Open Access:
         <ul>
             <li>several years ago CGA switched from VBA to Python for GIS programming classes
         </ul>
-    <li>replicate part of the course using open source and have it as optional
+    <li>replicate part of the course using open source and have it at least as optional
 </ul>
 
 </section>
 
 
 <section>
-<h2>Beyond courses</h2>
+<h2>Existing materials</h2>
 
-<ul>
-    <li>workshops
-        <ul>
-            <li>Workshops are a way how to experiment with what to teach and how.
-        </ul>
-    <li>code sprints, community sprints, hackfests
-        <ul>
-            <li>often associated with conferences
-            <li>software development, documentation, data
-            <li>novices, beginners and advanced users and contributors
-        </ul>
-    <li>Google Summer of Code
-</ul>
+<p class="small">examples</p>
+
+<dl>
+<dt>QGIS
+<dd>
+    <ul class="small">
+        <li><a href="http://docs.qgis.org/2.8/en/docs/gentle_gis_introduction">Introduction to GIS with QGIS</a>
+        <li><a href="http://docs.qgis.org/2.8/en/docs/training_manual">Training manuals</a>
+        <li><a href="http://spatialquerylab.com/foss4g-academy-curriculum">FOSS4G GeoAcademy Curriculum</a>
+        <li><a href="http://www.qgistutorials.com">
+QGIS tutorials and tips</a>
+        <!-- First two are supported by QGIS community. The other two are 3rd party materials. -->
+    </ul>
+<dt>Created by NCSU OSGeoREL
+<dd>
+    <ul class="small">
+        <li><a href="http://courses.ncsu.edu/gis582/common/">Geospatial Analysis and Modeling</a>
+        <li><a href="http://ncsu-osgeorel.github.io/uav-lidar-analytics-course/">UAV/lidar Data Analytics</a>
+        <li><a href="http://courses.ncsu.edu/lar582/common/">GIS for Designers</a>
+    </ul>
+</dd>
+</dl>
+
+<p>
+Use, improve, modify, customize existing materials.
 
 </section>
 
@@ -485,15 +498,37 @@ FOSS4G Europe 2015 (Como), also delivered at NCSU
 
 
 <section>
-<h2>Future directions: Educate educators</h2>
+<h2>Beyond courses</h2>
 
 <ul>
+    <li>workshops
+        <ul>
+            <li>Workshops are a way how to experiment with what to teach and how.
+        </ul>
+    <li>specific support for code and documentation contributions as part of service-learning
+    <li>code sprints, community sprints, hackfests
+        <ul>
+            <li>often associated with conferences
+            <li>software development, documentation, data
+            <li>novices, beginners and advanced users and contributors
+        </ul>
+    <li>Google Summer of Code
+</ul>
+
+</section>
+
+
+<section>
+<h2>Educate educators</h2>
+
+<ul>
+    <li>Start with educating the teachers.
+    <li>You should have enough people to fill in for the current people teaching it (same as for any other courses).
     <li>Instructors involvement in community is more important
         than students in involvement community and must come first.
     <li>Get sign up for a mailing list, e.g.
         <a href="https://lists.osgeo.org/listinfo/grass-user">grass-user</a> or
         <a href="https://lists.osgeo.org/listinfo/qgis-user">qgis-user</a>.
-
 </section>
 
 
@@ -537,21 +572,18 @@ FOSS4G Europe 2015 (Como), also delivered at NCSU
 <section>
 <h2>Future directions: IPython Notebook</h2>
 
-Used in workshop How to write a Python GRASS GIS 7 addon
-
 <ul>
-<li>https://github.com/wenzeslaus/python-grass-addon
-</ul>
-
-<p>
-Solution
-
-<ul>
-    <li>Docker + GRASS GIS + IPython Notebook
-    <li>Dockerfile:
+<li>IPython Notebook
     <ul>
-        <li>https://github.com/wenzeslaus/grass-gis-docker
+        <li>Used in workshop
+<a href="https://github.com/wenzeslaus/python-grass-addon">How to write a Python GRASS GIS 7 addon</a>.
     </ul>
+<li><a href="http://jupyter.org/IPython/">Jupyter</a> (works for R, C++, ...)
+<li>
+        <a href="https://github.com/jupyter/jupyterhub">JupyterHub</a>,
+        <a href="https://github.com/jupyter/tmpnb">tmpnb</a>,
+        <a href="https://github.com/jupyter/nbgrader">nbgrader</a>
+        (management, grading)
 </ul>
 
 </section>
@@ -563,14 +595,19 @@ Solution
 <ul>
     <li><a href="http://live.osgeo.org/">OSGeo-Live</a> in VCL for easy lab setup
     <li><a href="http://imincik.github.io/gis-lab/">GIS.lab</a> for easy lab setup
-    <li><a href="http://jupyter.org/IPython/">Jupyter</a>,
-        <a href="https://github.com/jupyter/jupyterhub">JupyterHub</a>,
-        <a href="https://github.com/jupyter/tmpnb">tmpnb</a>
-    <li>desktop to browser (DaaS, Desktop as a Service):
+    <li>desktop to browser:
         <a href="https://developer.gnome.org/gtk3/stable/gtk-broadway.html">GTK+ Broadway</a>,
         <a href="https://kanaka.github.io/noVNC/">noVNC</a>,
         <a href="https://www.openstack.org/">OpenStack</a> with
         <a href="Open"<a href="https://en.wikipedia.org/wiki/SPICE_%28protocol%29">SPICE</a>
+</ul>
+</section>
+
+
+<section>
+<h2>Future directions: Enhanced teaching materials</h2>
+
+<ul>
     <li>web-based tool to explore algorithm behavior in teaching materials
     <li>link teaching materials, standard user manual and the source code
 </ul>
@@ -584,7 +621,7 @@ Solution
     <li>improve students' geospatial skills by teaching 2 software packages
     <li>as a teacher, join the open source software community
     <li>use available tools like Git and HTML to create teaching materials
-    <li>use OSGeo Educational Content Inventory and mailing lists to tell other about it
+    <li>use OSGeo Educational Content Inventory and mailing lists to tell others about it
     <li>as an institution, invite local community for a code sprint
 </ul>
 
