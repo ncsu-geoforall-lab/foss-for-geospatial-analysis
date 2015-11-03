@@ -524,41 +524,44 @@ planned for US-IALE Asheville 2016
 
 <ul>
     <li>region specific datasets limit sharing of hands-on teaching material
-    <li>new version of North Carolina
+    <li>different datasets should use the same standardized names
         <ul>
             <li>commonly available data, frequently used in examples
             <li>standardized names such as elevation, streets, or lakes
                 <ul>
-                    <li>rather than srtm, dem10m, streetscomo
+                    <li>rather than srtm, dem10m, streets_raleigh
                 </ul>
         </ul>
-    <li>different datasets should use the same standardized names
-    <li>challenges:
-        <ul>
-            <li>attributes, coordinates, values, extents, resolutions
-        </ul>
+    <li><a href="http://grasswiki.osgeo.org/wiki/GRASS_GIS_Standardized_Sample_Datasets">wiki page</a>
+    <li>Create one for your region.
 </ul>
 
-<a href="http://grasswiki.osgeo.org/wiki/GRASS_GIS_Standardized_Sample_Datasets">wiki page</a>
+</section>
+
+
+<section>
+<h2>Example instructions</h2>
+
+<pre><code>g.region raster=elevation
+r.relief input=elevation output=shade
+d.shade shade=shade color=elevation
+</code></pre>
+
 
 <img src="img/dataset/std_dataset_piemonte_shaded_elevation.png">
 
 </section>
+
 
 <section>
 <h2>Standardized Sample Dataset: North Carolina, USA</h2>
 
 <img src="img/dataset/std_dataset_nc_stripe.png">
 
-Helena Mitasova1 and Markus Neteler2, authors of
-http://grassbook.org/Open Source GIS: A GRASS GIS Approach
-(fourth edition in preparation)
-
-http://www.meas.ncsu.edu/
-Department of Marine, Earth, and Atmospheric Sciences,
-North Carolina State University, USA
-http://gis.cri.fmach.it/
-Research and Innovation Centre, Fondazione Edmund Mach, Italy
+<p class="small">
+by Helena Mitasova and Markus Neteler,
+originally for
+<em>Open Source GIS: A GRASS GIS Approach</em>
 </section>
 
 
@@ -567,11 +570,8 @@ Research and Innovation Centre, Fondazione Edmund Mach, Italy
 
 <img src="img/dataset/std_dataset_cz_stripe.png">
 
-http://gismentors.eu/Martin Landa* and Jachym Cepicky from GISMentors
-http://geomatics.fsv.cvut.cz/research/osgeorel/
-OSGeoREL
-at Czech Technical University in Prague,
-Faculty of Civil Engineering
+<p class="small">
+by Martin Landa and Jachym Cepicky, GISMentors
 </section>
 
 
@@ -580,8 +580,9 @@ Faculty of Civil Engineering
 
 <img src="img/dataset/std_dataset_it_stripe.png">
 
-Luca Delucchi and Markus Neteler
-http://gis.cri.fmach.it/Research and Innovation Centre, Fondazione Edmund Mach, Italy
+<p class="small">
+by Luca Delucchi and Markus Neteler,
+Research and Innovation Centre, Fondazione Edmund Mach, Italy
 </section>
 
 
@@ -590,9 +591,8 @@ http://gis.cri.fmach.it/Research and Innovation Centre, Fondazione Edmund Mach, 
 
 <img src="img/dataset/std_dataset_pr_stripe.png">
 
-Keren Cepero-Perez
-
-http://www.meas.ncsu.edu/
+<p class="small">
+by Keren Cepero-Perez,
 Department of Marine, Earth, and Atmospheric Sciences,
 North Carolina State University, USA
 
