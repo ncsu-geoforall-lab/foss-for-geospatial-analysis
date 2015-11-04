@@ -1,0 +1,1027 @@
+<!doctype html>
+<html lang="en">
+<!-- This is a generated file. Do not edit. -->
+
+    <head>
+        <meta charset="utf-8">
+
+        <title>Integrating FOSS into GIScience Curriculum & Research</title>
+
+        <meta name="description" content="Integrating free, libre and open source software to GIScience, geospatial analysis, modeling and research">
+        <meta name="author" content="Helena Mitasova and Vaclav Petras">
+
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <link rel="stylesheet" href="css/reveal.css">
+        <link rel="stylesheet" href="css/theme/simple.css" id="theme">
+
+        <!-- For syntax highlighting -->
+        <link rel="stylesheet" href="lib/css/zenburn.css">
+
+        <!-- If the query includes 'print-pdf', include the PDF print sheet -->
+        <script>
+            if( window.location.search.match( /print-pdf/gi ) ) {
+                var link = document.createElement( 'link' );
+                link.rel = 'stylesheet';
+                link.type = 'text/css';
+                link.href = 'css/print/pdf.css';
+                document.getElementsByTagName( 'head' )[0].appendChild( link );
+            }
+        </script>
+
+        <!--[if lt IE 9]>
+        <script src="lib/js/html5shiv.js"></script>
+        <![endif]-->
+
+        <style>
+        * {
+            /*font-family: Verdana, Geneva, sans-serif !important;*/
+        }
+        body {
+        /*background-color: #FFF !important;*/
+        /*
+          background-image: url("pictures/elevation-nagshead.gif");
+          background-repeat: no-repeat;
+          background-position: left bottom;*/
+        }
+        .reveal section img {
+            background: transparent;
+            border: 0;
+            box-shadow: 0 0 0 rgba(0, 0, 0, 0.15);
+        }
+        /* for standalone frame */
+        /*
+        iframe {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        */
+        /* display: inline; background-color: #002B36; padding: 0px; margin: 0px */
+        .rounded-corners {
+            border: 0px solid black;
+            border-radius: 5px;
+            -moz-border-radius: 5px;
+            -khtml-border-radius: 5px;
+            -webkit-border-radius: 5px;
+        }
+        a {
+            color: #060 !important;
+        }
+        a:hover {
+            color: #060 !important;
+            text-decoration: underline !important;
+        }
+        h1, h2, h3, h4, h5 {
+            text-transform: none !important;
+            /* word-break: keep-all; text-transform: none; font-size: 200%; line-height: 110%; */
+            color: #060 !important;
+            /* color: #444 !important; */ /* grey from the wab page */
+            font-weight: bold !important;
+            -webkit-hyphens: none !important;
+            -moz-hyphens: none !important;
+            -ms-hyphens: none !important;
+            hyphens: none !important;
+            line-height: 110% !important;
+        }
+        .reveal .progress span {
+            background-color: #060 !important;
+        }
+        /* predefined element positioning */
+        .top {
+            /*position: relative;*/
+            top: 5%;
+            height: 45%; /* is the height even needed? */
+        }
+        .bottom {
+            height: 45%;
+        }
+        .ne {
+            position: absolute;
+            top: 5%;
+            right: 5%;
+            height: 45%;
+            width: 45%;
+        }
+        .nw {
+            position: absolute;
+            top: 5%;
+            left: 5%;
+            height: 45%;
+            width: 45%;
+        }
+        .se {
+            position: absolute;
+            bottom: 5%;
+            right: 5%;
+            height: 45%;
+            width: 45%;
+        }
+        .sw {
+            position: absolute;
+            bottom: 5%;
+            left: 5%;
+            height: 45%;
+            width: 45%;
+        }
+
+        /* classes for sections with predefined elements */
+        /* using !important because, reveal styles are applied afterwards  */
+        .right, .textimg > img, .textimg > video, .textimg > iframe, .imgtext > p, .imgtext > ul, .imgtext > ol, .imgtext > div {
+            float: right;
+            text-align: left;
+            max-width: 47% !important;
+        }
+        .left, .imgtext > img, .imgtext > video, imgtext > iframe, .textimg > p, .textimg > ul, .textimg > ol, .textimg > div {
+            float: left;
+            text-align: left;
+            max-width: 47% !important;
+        }
+        li > ul, li > ol {
+            font-size: 85% !important;
+            line-height: 110% !important;
+        }
+        .small {
+            font-size: smaller !important;
+            color: gray;
+            margin: 0.1em !important;
+        }
+        .credit {
+            font-size: small !important;
+            color: gray;
+            margin: 0.1em !important;
+        }
+        blockquote {
+            width: 100% !important;
+            margin: 0.1em !important;
+        }
+        .info-source {
+            font-size: 70% !important;
+        }
+        </style>
+    </head>
+
+    <body>
+
+        <div class="reveal">
+
+            <!-- Any section element inside of this container is displayed as a slide -->
+            <div class="slides">
+<section>
+    <h2>Integrating FOSS into GIScience Curriculum &amp; Research</h2>
+
+    <p class="title-foot.png">
+        Helena Mitasova and Vaclav Petras<br>
+        <a href="http://www.ncsu.edu/" title="North Carolina State University.png">NCSU</a>
+        <a href="http://geospatial.ncsu.edu/osgeorel/" title="NCSU OSGeo Research and Education Laboratory.png">OSGeoREL</a>
+        at
+        <a href="http://geospatial.ncsu.edu/" title="Center for Geospatial Analytics website">Center for Geospatial Analytics</a>
+        <br>
+        North Carolina State University
+    </p>
+    <p>November, 2015</p>
+</section>
+
+
+<section>
+<h2>Free and open source software is a norm</h2>
+
+<blockquote>
+<p>
+Open Source Software Is Now a Norm in Businesses
+<p class="info-source">
+  <a href="http://www.pcworld.com/article/228136/open_source_software_now_a_norm_in_businesses.html">Katherine Noyes, PCWorld</a>, May 18, 2011
+</blockquote>
+
+<blockquote>
+<p>
+Open Source has Become Mainstream but Still Drives Innovation
+<p class="info-source">
+  <a href="http://www.zdnet.com/article/open-source-has-become-mainstream-but-still-drives-innovation/">Talend Yves de Montcheuil, ZDNet</a>, May 2, 2012
+</blockquote>
+
+</section>
+
+
+<section>
+<h2>Free and open source software is ubiquitous</h2>
+
+<blockquote>
+<p>
+10 of Europe's 15 largest banks are now running [...] Postgres
+<p class="info-source">
+  <a href="http://www.zdnet.com/article/oracle-database-costs-are-driving-firms-to-postgres-says-enterprisedb/">Sandor Klein said for ZDNet (Toby Wolpe)</a>, November 19, 2013
+</blockquote>
+
+<blockquote>
+<p>
+64% of internet exchange points are now using [...] an open source solution
+<p class="info-source">
+  <a href="https://joinup.ec.europa.eu/community/osor/news/2/3-internet-exchange-points-use-czech-open-source-router">Gijs Hillenius, Joinup Open source observatory</a>, June 8, 2015
+</blockquote>
+
+</section>
+
+
+<section>
+<h2>Free and open source software, everybody is doing it</h2>
+
+<blockquote>
+<p>
+Redmond top man Satya Nadella: 'Microsoft loves Linux'
+<p class="info-source">
+  <a href="http://www.theregister.co.uk/2014/10/20/microsoft_cloud_event/">Neil McAllister, The Register</a>, October 20, 2014
+</blockquote>
+
+<blockquote>
+<p>
+Open Sourcing Is No Longer Optional, Not Even for Apple
+<p class="info-source">
+  <a href="http://www.wired.com/2015/06/open-sourcing-no-longer-optional-not-even-apple/">Klint Finley, WIRED</a>, June 9, 2015
+</blockquote>
+
+</section>
+
+
+<section>
+<h2>Free and open source software for needed in science</h2>
+<blockquote>
+    <p>
+        Software [...] developed as part of novel methods is as important
+        for the method's implementation [...]
+        Such software [...] must be made available to readers upon publication.
+    </p>
+    <p class="info-source">
+        <a href="http://www.nature.com/nmeth/journal/v4/n3/full/nmeth0307-189.html">Social software, Nature Methods 4</a>, 189, 2007
+    </p>
+</blockquote>
+<a href="https://opensource.com/" title="Image credit: opensource.com"><img src="img/general/open_science.png" width="30%" style="margin: 0.1em;"></a>
+</section>
+
+
+<section>
+<h2>No science without free and open source software</h2>
+<blockquote>
+    <p>
+        The opposite of ‘open’ isn’t closed. The opposite of open is ‘broken.’
+    </p>
+    <p class="info-source">
+        <a href="https://openscot.wordpress.com/2013/10/09/open-scotland-report-and-actions/">Cable Green (quoting John Wilbanks) at Open Scotland Summit</a> 2013
+    </p>
+</blockquote>
+<a href="https://opensource.com/" title="Image credit: opensource.com">
+    <img src="img/general/open_up_book.png" width="30%">
+</a>
+</section>
+
+
+<section>
+<h2>Free and open source software enhances science</h2>
+<ul>
+    <li>Sharing</li>
+    <li>Reproducibility</li>
+    <li>Only journal papers not enough</li>
+</ul>
+</section>
+
+
+<section>
+<h2>Courses at North Carolina State University</h2>
+
+<p class="small">
+Listing only geospatial courses where presentation authors are involved.
+
+</section>
+
+
+<section>
+<h2>The original idea</h2>
+
+<ul>
+    <li>lectures:
+    <ul>
+        <li>theory, concepts
+        <li>software-independent
+    </ul>
+    <li>labs and assignments:
+    <ul>
+        <li>relate to given lecture
+        <li>hands-on, practical
+        <li>students use software
+    </ul>
+</ul>
+
+</section>
+
+
+<section>
+<h2>The problem</h2>
+
+<ul>
+    <li>students are becoming (only) software users instead of scientists
+    <li>students mix software details and general concepts
+    <ul>
+        <li>saying Shapefile or feature class instead of
+            vector data
+            (<a href="http://www.opengeospatial.org/ogc/glossary/v">OGC Glossary</a>)
+    </ul>
+    <li>bonding with software limits flexibility
+    <li>software promotes software/vendor-specific formats/technologies
+    <li>single software choice limits explored algorithms
+</ul>
+</section>
+
+
+<section>
+<h2>The solution</h2>
+
+<ul>
+    <li>lectures:
+    <ul>
+        <li>theory, concepts
+        <li>software-independent
+    </ul>
+    <li>labs and assignments:
+    <ul>
+        <li>relate to given lecture
+        <li>hands-on, practical
+        <li>students use two different software packages, in our case:
+    <ul>
+        <li>GRASS GIS (free and open source)
+        <li>ArcGIS (proprietary)
+    </ul>
+    <li>similar task in both
+    <li>opportunity to see what is a general concept
+            and what is specific to a particular software
+</ul>
+</section>
+
+
+<section class="textimg">
+<h2>Geospatial Analysis and Modeling</h2>
+
+<ul>
+    <li>since 2008
+    <li>on-campus and distance
+    <li>every semester 30-60 students
+    <li>GRASS GIS, ArcGIS
+    <li>workflow for software provided
+    <li>students write reports with general theory and methods
+</ul>
+
+<img src="img/edu/secref.png">
+
+</section>
+
+
+<section>
+<h2>Assignments</h2>
+
+<img src="img/edu/elevation_2d_grassgis_arcgis.jpg">
+<p class="credit">Makiko Shukunobe, spring 2012</p>
+
+</section>
+
+
+<section>
+<h2>Assignments</h2>
+
+<img class="left" src="img/edu/slope_grassgis.jpg">
+<img class="right" src="img/edu/slope_arcgis.jpg">
+
+</section>
+
+
+<section>
+<h2>Assignments</h2>
+
+<img class="left" src="img/edu/aspect_grassgis.jpg">
+<img class="right" src="img/edu/aspect_arcgis.jpg">
+
+</section>
+
+
+<section>
+<h2>Assignments</h2>
+
+<img class="left" src="img/edu/contours_grassgis.jpg">
+<img class="right" src="img/edu/contours_arcgis.jpg">
+
+</section>
+
+
+<section>
+<h2>Assignments</h2>
+
+<img src="img/edu/elevation_3d_grassgis_arcgis.jpg">
+<p class="credit">Makiko Shukunobe, spring 2012</p>
+
+</section>
+
+
+<section class="textimg">
+<h2>Multidimensional Geospatial Modeling</h2>
+
+<ul>
+<li>software:
+
+<ul>
+
+<li>GRASS GIS,
+    often with new features such as
+    Temporal Framework
+<li>+ whatever the students need, e.g.
+    XBeach, libLAS or LAStools
+</ul>
+
+<li>new technologies:
+   Tangible Landscape, NCSU Hunt Lib Teaching and Vis Lab,
+   eye tracking
+</ul>
+
+<img src="img/edu/tangible.jpg">
+
+</section>
+
+
+<section class="textimg">
+<h2>GIS for Designers</h2>
+
+<ul>
+    <li>software in class:
+    <ul>
+        <li>ArcGIS (proprietary)
+        <li>GRASS GIS (open source)
+        <li>Rhino (proprietary)
+        <li>Tangible Landscape
+    </ul>
+    <li>for projects, architects and designers usually combine a lot of tools including tools for graphics
+</ul>
+
+<img src="img/edu/designers.jpg">
+
+</section>
+
+
+<section class="textimg">
+<h2>UAV/lidar Data Analytics</h2>
+
+<ul>
+<li>Agisoft PhotoScan and experimentally OpenDroneMap
+<li>GRASS GIS, Python
+</ul>
+
+<img src="img/edu/uav.jpg">
+
+</section>
+
+
+<section class="textimg">
+<h2>Teaching materials</h2>
+
+<ul>
+    <li>file format
+    <ul>
+        <li>originally HTML, selecting new
+            <ul>
+                <li>Markdown, no general standard
+                <li>reStructuredText, hot candidate
+            </ul>
+        <li>result: HTML
+        <li>presentation slides in HTML5 (Reveal.js)
+    </ul>
+    <li>license: CC BY-SA
+    <li>Git (GitHub hosted)
+        for revision control, collaboration and sharing source code
+</ul>
+
+<img src="img/edu/osgeorel_courses_example.png">
+
+</section>
+
+
+<section>
+<h2>Teaching materials</h2>
+
+<ul>
+    <li>registered in
+        <a href="http://www.osgeo.org/educational_content">OSGeo Educational Content Inventory</a>
+    <li><a href="http://geospatial.ncsu.edu/osgeorel/courses.html">freely and openly available online</a>
+</ul>
+
+<img src="img/edu/osgeorel_courses_header.png">
+
+</section>
+
+
+<section>
+<h2>GRASS GIS advantage for teaching materials maintenance</h2>
+
+<ul class="small">
+    <li>GRASS GIS workflow recorded as commands.
+    <ul>
+        <li>Screenshots are hard to update while text is easy to update.
+        <li>GUI dialog filled according to the command.
+        <li>Commands can be automatically extracted and tested.
+        <li>Text also for ArcGIS, but the names in dialogs are not part of the API, so they change.
+    </ul>
+</ul>
+
+<img src="img/edu/grass_cmd_gui.png">
+
+</section>
+
+
+<section>
+<h2>GRASS GIS advantage for starting with Python</h2>
+
+<ul class="small">
+    <li>GRASS GIS workflow recorded as commands.
+    <ul>
+        <li>Python interface for GRASS GIS follows the command line interface.
+    </ul>
+</ul>
+
+<p>
+Command line (in the instructions)
+
+<pre><code>r.slope.apsect elevation=elev_ned10m_nn aspect=aspect_ned10m_nn
+</code></pre>
+
+<p>
+Python
+
+<pre><code>import grass.script as gscript
+gscript.run_command('r.slope.apsect',
+                    elevation='elev_ned10m_nn',
+                    aspect='aspect_ned10m_nn')
+</code></pre>
+
+</section>
+
+
+<section>
+<h2>More details in the paper</h2>
+
+Vaclav Petras, Anna Petrasova, Brendan Harmon,
+Ross K. Meentemeyer and Helena Mitasova.
+
+<em>Integrating Free and Open Source Solutions into Geospatial Science Education</em>.
+
+<span class="small">
+North Carolina State University.
+<em>In</em>: ISPRS International Journal of Geo-Information. 2015.
+</span>
+
+<p class="small">
+Open Access,
+<a href="http://dx.doi.org/10.3390/ijgi4020942">doi:10.3390/ijgi4020942</a>
+
+<p>
+<img src="img/edu/paper_picture.jpg">
+
+</section>
+
+
+<section>
+<h2>How to do that</h2>
+
+</section>
+
+
+<section>
+<h2>Geo for All</h2>
+
+<ul>
+    <li><em>Making geospatial education &amp; solution accessible to all</em>
+    <li>establishing research and teaching opportunities
+    <li>building global open access teaching infrastructure
+    <li>worldwide network of lab exchanging students and faculty
+    <li>collaboration between academia, schools, government and industry
+        around open geospatial science and education
+    <li>connection to existing organizations
+        <ul>
+            <li>OSGeo Foundation
+            <li>ICA
+            <li>ISPRS
+        </ul>
+    <li>join at:
+        <a href="http://www.geoforall.org/how_to_join">www.geoforall.org/how_to_join</a>
+</ul>
+
+</section>
+
+
+<section>
+<h2>First small steps to improve courses</h2>
+
+<ul>
+    <li>use general terminology, instead of software specific terms
+    <li>always mention also alternative software packages for a given task
+    <li>prefer standards over software specific formats and services
+        <ul>
+            <li>use OGC standards in GIS, W3C in web development
+        </ul>
+    <li>explicitly allow and support using open source in students' projects
+    <li>in classes, use open source for secondary tasks
+        <ul>
+            <li>Inkscape for vector graphics
+        </ul>
+    <li>use open source yourself
+</ul>
+
+</section>
+
+
+<section>
+<h2>First small steps to improve courses</h2>
+
+<ul>
+    <li>use generally accepted open solution
+        rather than vendor-specific solution
+        <ul>
+            <li>several years ago CGA switched
+                from VBA to Python
+                for GIS programming classes
+        </ul>
+    <li>replicate part of the course using open source and have it at least as optional
+    <li>assignments or projects to create teaching material for the class
+    <li>include open source as experimental part of the course
+    <li>allow students to pick one or the other
+</ul>
+
+</section>
+
+
+<section>
+<h2>Educate educators</h2>
+
+<ul>
+    <li>Start with educating the teachers.
+    <li>You should have enough people to fill in for the current people teaching it (same as for any other courses).
+    <li>Instructors involvement in community is more important
+        than students in involvement community and must come first.
+    <li>Get sign up for a mailing list, e.g.
+        <a href="https://lists.osgeo.org/listinfo/grass-user">grass-user</a> or
+        <a href="https://lists.osgeo.org/listinfo/qgis-user">qgis-user</a>.
+</section>
+
+
+<section>
+<h2>Existing materials</h2>
+
+<p class="small">examples</p>
+
+<dl>
+<dt>For QGIS
+<dd>
+    <ul class="small">
+        <li><a href="http://docs.qgis.org/2.8/en/docs/gentle_gis_introduction">Introduction to GIS with QGIS</a>
+        <li><a href="http://docs.qgis.org/2.8/en/docs/training_manual">Training manuals</a>
+        <li><a href="http://spatialquerylab.com/foss4g-academy-curriculum">FOSS4G GeoAcademy Curriculum</a>
+        <li><a href="http://www.qgistutorials.com">
+QGIS tutorials and tips</a>
+        <!-- First two are supported by QGIS community. The other two are 3rd party materials. -->
+    </ul>
+<dt>Created by NCSU OSGeoREL
+<dd>
+    <ul class="small">
+        <li><a href="http://courses.ncsu.edu/gis582/common/">Geospatial Analysis and Modeling</a>
+        <li><a href="http://ncsu-osgeorel.github.io/uav-lidar-analytics-course/">UAV/lidar Data Analytics</a>
+        <li><a href="http://courses.ncsu.edu/lar582/common/">GIS for Designers</a>
+    </ul>
+</dd>
+</dl>
+
+<p>
+Use, improve, modify, customize existing materials.
+
+</section>
+
+
+<section>
+<h2>NCSU OSGeoREL workshops</h2>
+
+<ul>
+
+<li>
+<a href="http://ncsu-osgeorel.github.io/grass-intro-workshop/">Introduction to GRASS GIS</a>,
+delivered at NCSU
+
+<li>
+<a href="http://ncsu-osgeorel.github.io/grass-temporal-workshop/">Spatio-temporal data handling and visualization in GRASS GIS</a>,
+FOSS4G 2014 (Portland), also delivered at NCSU
+
+<li>
+<a href="http://ncsu-osgeorel.github.io/erosion-modeling-tutorial/">Soil erosion and deposition modeling</a>,
+tutorial, part of broader project, workflows for GRASS GIS and ArcGIS
+
+<li>
+<a href="https://github.com/wenzeslaus/python-grass-addon">How to write a Python GRASS GIS 7 addon</a>,
+FOSS4G Europe 2015 (Como), also delivered at NCSU
+
+<li>
+<span class="small">
+Urban growth and open source GIS,
+planned for US-IALE Asheville 2016
+
+</ul>
+
+</section>
+
+
+<section>
+<h2>OSGeo Educational Content Inventory</h2>
+
+<ul>
+    <li>List of resources created by the community
+    <li>Hosted by OSGeo Foundation
+    <li>Search at: <a href="http://www.osgeo.org/educational_content">osgeo.org/educational_content</a>
+    <li>Register your course materials, so other may find them.
+</ul>
+
+</section>
+
+
+<section>
+<h2>Standardized sample datasets</h2>
+
+<ul>
+    <li>region specific datasets limit sharing of hands-on teaching material
+    <li>different datasets should use the same standardized names
+        <ul>
+            <li>commonly available data, frequently used in examples
+            <li>standardized names such as elevation, streets, or lakes
+                <ul>
+                    <li>rather than srtm, dem10m, streets_raleigh
+                </ul>
+        </ul>
+    <li><a href="http://grasswiki.osgeo.org/wiki/GRASS_GIS_Standardized_Sample_Datasets">wiki page</a>
+    <li>Create one for your region.
+</ul>
+
+</section>
+
+
+<section>
+<h2>Example instructions</h2>
+
+<pre><code>g.region raster=elevation
+r.relief input=elevation output=shade
+d.shade shade=shade color=elevation
+</code></pre>
+
+<p>
+<img width="30%" src="img/dataset/std_dataset_nc_shaded_elevation.png">
+<img width="30%" src="img/dataset/std_dataset_cz_shaded_elevation.png">
+<img width="30%" src="img/dataset/std_dataset_piemonte_shaded_elevation.png">
+
+<p class="small">
+Result for North Carolina, Czech Republic and Piemonte (Italy)
+
+</section>
+
+
+<section>
+<h2>Beyond courses</h2>
+
+<ul>
+    <li>workshops
+        <ul>
+            <li>Workshops are a way how to experiment with what to teach and how.
+        </ul>
+    <li>specific support for code and documentation contributions as part of service-learning
+    <li>code sprints, community sprints, hackfests
+        <ul>
+            <li>often associated with conferences
+            <li>software development, documentation, data
+            <li>novices, beginners and advanced users and contributors
+        </ul>
+    <li>Google Summer of Code
+</ul>
+
+</section>
+
+
+<section>
+<h2>Future directions</h2>
+
+</section>
+
+
+<section>
+<h2>Tools for open science course</h2>
+
+<ul>
+    <li>Course dedicated to
+    <ul>
+        <li>exploring important role FOSS plays in science
+        <li>overview of tools and methods common in FOSS and desperately needed in science
+        <li>open access, open data, open standards, open...
+        <li>reusability and reproducibility are standard in FOSS
+    </ul>
+</ul>
+
+<a href="https://opensource.com/" title="Image credit: opensource.com">
+    <img src="img/general/open_up_book.png" width="30%">
+</a>
+
+</section>
+
+
+<section>
+<h2>Software, technologies and platforms</h2>
+
+<ul>
+    <li>OpenStreetMap,
+        <a href="http://teachosm.org">TeachOSM</a>,
+        <a href="http://learnosm.org">LearnOSM</a>
+    <ul>
+        <li>for introduction to geography or GIS
+        <li>as an example of community-based project
+        <li>as data source in advanced courses
+    </ul>
+    <li><a href="http://mapstory.org/">MapStory</a> for student projects
+</ul>
+</section>
+
+
+<section>
+<h2>IPython Notebook</h2>
+
+<ul>
+<li>IPython Notebook
+    <ul>
+        <li>Used in workshop
+<a href="https://github.com/wenzeslaus/python-grass-addon">How to write a Python GRASS GIS 7 addon</a>.
+    </ul>
+<li><a href="http://jupyter.org/IPython/">Jupyter</a> (works for Python, R, C++, ...)
+<li>
+        <a href="https://github.com/jupyter/jupyterhub">JupyterHub</a>,
+        <a href="https://github.com/jupyter/tmpnb">tmpnb</a>,
+        <a href="https://github.com/jupyter/nbgrader">nbgrader</a>
+        (management, grading)
+</ul>
+
+</section>
+
+
+<section>
+<h2>Software, technologies and platforms</h2>
+
+<ul>
+    <li><a href="http://live.osgeo.org/">OSGeo-Live</a> in VCL for easy lab setup
+    <li><a href="http://imincik.github.io/gis-lab/">GIS.lab</a> for easy lab setup
+    <li>desktop to browser:
+        <a href="https://developer.gnome.org/gtk3/stable/gtk-broadway.html">GTK+ Broadway</a>,
+        <a href="https://kanaka.github.io/noVNC/">noVNC</a>,
+        <a href="https://www.openstack.org/">OpenStack</a> with
+        <a href="Open"<a href="https://en.wikipedia.org/wiki/SPICE_%28protocol%29">SPICE</a>
+</ul>
+</section>
+
+
+<section>
+<h2>Enhanced teaching materials</h2>
+
+<ul>
+    <li>web-based tool to explore algorithm behavior in teaching materials
+    <li>link teaching materials, standard user manual and the source code
+</ul>
+</section>
+
+
+<section>
+<h2>Summary</h2>
+
+<ul>
+    <li>improve students' geospatial skills by teaching 2 software packages
+    <li>as a teacher, join the open source software community
+    <li>use available tools like Git and HTML to create teaching materials
+    <li>use OSGeo Educational Content Inventory and mailing lists to tell others about it
+    <li>as an institution, invite local community for a code sprint
+</ul>
+
+</section>
+<!-- This is a generated file. Do not edit. -->
+        </div>  <!-- slides -->
+
+    </div>  <!-- reveal -->
+
+        <script src="lib/js/head.min.js"></script>
+        <script src="js/reveal.js"></script>
+
+        <script>
+
+            // Full list of configuration options available here:
+            // https://github.com/hakimel/reveal.js#configuration
+            Reveal.initialize({
+                // Display controls in the bottom right corner
+                controls: false,
+
+                // Display a presentation progress bar
+                progress: true,
+                
+                center: true,
+                
+                // Display the page number of the current slide
+                slideNumber: false,
+
+                // Enable the slide overview mode
+                overview: true,
+
+                // Turns fragments on and off globally
+                fragments: true,
+
+                // The "normal" size of the presentation, aspect ratio will be preserved
+                // when the presentation is scaled to fit different resolutions. Can be
+                // specified using percentage units.
+                // width: 960,
+                // height: 700,
+                
+                // Factor of the display size that should remain empty around the content
+                margin: 0.05,  // increase?
+
+                // Bounds for smallest/largest possible scale to apply to content
+                minScale: 0.5,
+                maxScale: 5.0,
+
+                theme: Reveal.getQueryHash().theme,  // available themes are in /css/theme
+                transition: Reveal.getQueryHash().transition || 'none', // default/cube/page/concave/zoom/linear/fade/none
+
+                // Push each slide change to the browser history
+                history: true,
+                // Enable keyboard shortcuts for navigation
+                keyboard: true,
+
+                // Vertical centering of slides
+                center: true,
+
+                // Enables touch navigation on devices with touch input
+                touch: true,
+
+                // Loop the presentation
+                loop: false,
+                // Flags if the presentation is running in an embedded mode,
+                // i.e. contained within a limited portion of the screen
+                embedded: false,
+
+                // Number of milliseconds between automatically proceeding to the
+                // next slide, disabled when set to 0, this value can be overwritten
+                // by using a data-autoslide attribute on your slides
+                autoSlide: 0,
+
+                // Stop auto-sliding after user input
+                autoSlideStoppable: true,
+
+                // Enable slide navigation via mouse wheel
+                mouseWheel: false,
+
+                // Hides the address bar on mobile devices
+                hideAddressBar: true,
+
+                // Opens links in an iframe preview overlay
+                previewLinks: false,
+
+                // Transition speed
+                transitionSpeed: 'default', // default/fast/slow
+
+                // Transition style for full page slide backgrounds
+                backgroundTransition: 'none', // default/none/slide/concave/convex/zoom
+
+                // Number of slides away from the current that are visible
+                viewDistance: 3,
+
+                // Parallax background image
+                //parallaxBackgroundImage: '', // e.g. "'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg'"
+
+                // Parallax background size
+                //parallaxBackgroundSize: '' // CSS syntax, e.g. "2100px 900px"
+
+                // Optional libraries used to extend on reveal.js
+                dependencies: [
+                    { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                    { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+                    { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+                    { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+                    { src: 'plugin/math/math.js', async: true }
+                ],
+
+                math: {
+                    mathjax: 'http://cdn.mathjax.org/mathjax/latest/MathJax.js',
+                    config: 'TeX-AMS_HTML-full'  // See http://docs.mathjax.org/en/latest/config-files.html
+                }
+            });
+
+        </script>
+        <script type="text/javascript"
+    src="https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+    </body>
+</html>
