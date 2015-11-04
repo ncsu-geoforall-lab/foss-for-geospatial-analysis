@@ -1,9 +1,17 @@
 ./copy-common-files.py --dst-dir=build
+
 ./build-slides.py --outdir=build \
-    --title="Introduction to FOSS4G" \
-    --meta-description="Introduction to Free, Libre and Open Source Software: for Geospatial Analysis and Modeling" \
+    --title="FOSS in Geospatial Analytics and GIS" \
+    --meta-description="Free, Libre and Open Source Software for Geospatial Analytics, Analysis, Modeling, and GIS" \
     --meta-author="Helena Mitasova and Vaclav Petras" \
     index.html
+
+./build-slides.py --outdir=build \
+    --title="Introduction to FOSS4G" \
+    --meta-description="Introduction to Free, Libre and Open Source Software for Geospatial Analysis and Modeling" \
+    --meta-author="Helena Mitasova and Vaclav Petras" \
+    --outfile=intro-to-foss.html \
+    intro-to-foss.html
 
 ./build-slides.py --outdir=build \
     --title="Integrating FOSS into GIScience Curriculum & Research" \
