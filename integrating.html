@@ -185,11 +185,11 @@ Note - we discuss only courses where presentation authors are involved.
 <section>
 <h3>Assignments: Erosion Modeling</h3>
 <p class="small">Sample lines from instructions and results for GRASS GIS and ArcGIS
-<pre><code> r.mapcalc "sedflow = 270. * Kfac * Cfac * flowacc * sin(slope)"
+<pre><code>r.mapcalc "sedflow = 270. * Kfac * Cfac * flowacc * sin(slope)"
 r.divergence magn=sedflow dir=aspect out=erosion_deposition
 </code></pre>
 
-<pre><code> Build an expression for sflowtopo:
+<pre><code>Build an expression for sflowtopo:
 "flowacc" * Sin("slope" * math.pi/180.0)
 output raster = sflowtopo
 </code></pre>
