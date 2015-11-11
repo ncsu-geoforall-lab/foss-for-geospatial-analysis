@@ -174,22 +174,38 @@ Note - we discuss only courses where presentation authors are involved.
 </section>
 
 <section>
-<h3>Assignments</h3>
+<h3>Assignments: Visualization</h3>
+<p>
 <img src="img/edu/elevation_3d_grassgis_arcgis.jpg">
-<p>REPLACE
-show assignment instructions and the resulting images
-<p class="credit">Makiko Shukunobe, spring 2012 REPLACE with erosion?</p>
+<p class="credit">Makiko Shukunobe, Spring 2012 </p>
 </section>
 
 <section>
-<h3>Exam</h3>
+<h3>Assignments: Erosion Modeling</h3>
+<p class="small">Sample lines from instructions and results for GRASS GIS and ArcGIS
+<pre><code> r.mapcalc "sedflow = 270. * Kfac * Cfac * flowacc * sin(slope)"
+r.divergence magn=sedflow dir=aspect out=erosion_deposition
+</code></pre>
 
-<p>REPLACE
-Students develop simple workflows for given tasks:
-example task and results in GRASS and ArcGIS
-<img class="left" src="img/edu/slope_grassgis.jpg">
-<img class="right" src="img/edu/slope_arcgis.jpg">
-<p class="credit">replace with exam</p>
+<pre><code> Build an expression for sflowtopo:
+"flowacc" * Sin("slope" * math.pi/180.0)
+output raster = sflowtopo
+</code></pre>
+<p>
+<img width="55%" src="img/edu/erdepgrass_lily.png">
+<img width="35%" src="img/edu/erdeparc_lily.png">
+<p class="credit">Lilliana Velasquez, Spring 2014 </p>
+</section>
+
+<section>
+<h3>Midterm exam</h3>
+
+<p class="small">
+Simple workflows for given problems in GRASS GIS <b>or</b> ArcGIS:
+example least cost path solutions in GRASS and ArcGIS</p>
+<img width="45%" src="img/edu/exam_path_vasek.png">
+<img width="45%" src="img/edu/exam_path_lauraarc.png">
+<p class="credit">Vaclav Petras and Laura Belica</p>
 </section>
 
 <section>
