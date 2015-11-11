@@ -178,13 +178,13 @@
         <br>
         <a href="http://www.ncsu.edu/" title="North Carolina State University.png">NCSU</a>
         <a href="http://geospatial.ncsu.edu/osgeorel/" title="NCSU OSGeo Research and Education Laboratory.png">OSGeoREL</a>
-        at
+        at the
         <a href="http://geospatial.ncsu.edu/" title="Center for Geospatial Analytics website">Center for Geospatial Analytics</a>
         <br>
         North Carolina State University
     </p>
     <p>November, 2015</p>
-    <p>slides available at http://geospatial.ncsu.edu/osgeorel/publications.html</p>
+    <p style="small" >slides available at <a href="http://geospatial.ncsu.edu/osgeorel/publications.html">geospatial.ncsu.edu/osgeorel</a></p>
 </section>
 
 <section>
@@ -199,7 +199,7 @@
 <p>
    <li> Free means freedom: free is a matter of liberty not price
 <p>
-   <li> It can be commercial (Red Hat Linux) but not proprietary
+   <li> It can be commercial but not proprietary
 </ul>
 </ul>
 </section>
@@ -221,8 +221,8 @@ Apple uses software created by the Open Source community and returns its enhance
 &mdash;<a href="https://www.apple.com/opensource/">Apple Inc., 2015</a>
 </blockquote>
 <p>
-Google, Amazon, Facebook, IBM, Major Banks, Internet servers, ESRI all use and contribute
-to FOSS and the community
+Google, Amazon, Facebook, IBM, Red Hat...
+all use and contribute to FOSS and the community
 </section>
 
 <section>
@@ -240,7 +240,7 @@ to FOSS and the community
         <a href="http://www.nature.com/nmeth/journal/v4/n3/full/nmeth0307-189.html">Social software, Nature Methods 4</a>, 189, 2007
     </p>
 </blockquote>
-<p class"small">Note: making software available to readers does not make it FOSS</p>
+<p class="small">Note: making software available to readers does not make it FOSS</p>
 </section>
 
 <section>
@@ -345,31 +345,49 @@ Note - we discuss only courses where presentation authors are involved.
 -->
 </section>
 
+<!--
 <section>
-<h3>Assignments</h3>
+<h3>Assignments: Visualization</h3>
+<p>
 <img src="img/edu/elevation_3d_grassgis_arcgis.jpg">
-<p>REPLACE
-show assignment instructions and the resulting images
-<p class="credit">Makiko Shukunobe, spring 2012 REPLACE with erosion?</p>
+<p class="credit">Makiko Shukunobe, Spring 2012 </p>
+</section>
+-->
+
+<section>
+<h3>Assignments: Erosion Modeling</h3>
+<p class="small">Sample lines from instructions and results for GRASS GIS and ArcGIS
+<pre><code> r.mapcalc "sedflow = 270. * Kfac * Cfac * flowacc * sin(slope)"
+r.divergence magn=sedflow dir=aspect out=erosion_deposition
+</code></pre>
+
+<pre><code> Build an expression for sflowtopo:
+"flowacc" * Sin("slope" * math.pi/180.0)
+output raster = sflowtopo
+</code></pre>
+<p>
+<img width="55%" src="img/edu/erdepgrass_lily.png">
+<img width="35%" src="img/edu/erdeparc_lily.png">
+<p class="credit">Lilliana Velasquez, Spring 2014 </p>
 </section>
 
 <section>
-<h3>Exam</h3>
+<h3>Midterm exam</h3>
 
-<p>REPLACE
-Students develop simple workflows for given tasks:
-example task and results in GRASS and ArcGIS
-<img class="left" src="img/edu/slope_grassgis.jpg">
-<img class="right" src="img/edu/slope_arcgis.jpg">
-<p class="credit">replace with exam</p>
+<p class="small">
+Simple workflows for given problems in GRASS GIS <b>or</b> ArcGIS:
+example least cost path solutions in GRASS and ArcGIS</p>
+<img height="300" src="img/edu/exam_path_vasek.png">
+<img height="300" src="img/edu/exam_path_lauraarc.png">
+<p class="credit">Vaclav Petras and Laura Belica</p>
 </section>
 
 <section>
 <h3>Independent Project</h3>
-<p>REPLACE
-<img class="left" src="img/edu/aspect_grassgis.jpg">
-<img class="right" src="img/edu/aspect_arcgis.jpg">
-<p class="credit">replace with project</p>
+<p>Focused on student's research interests, any geospatial software can be used
+<p class="small">only condition: surface or continuous field component must be included
+<img  height="350" src="img/edu/vasek_fire.png">
+<p class="credit">Vaclav Petras</p>
 </section>
 
 <section>
@@ -397,7 +415,7 @@ GIS as an integral part of the creative design process
 <li>Agisoft PhotoScan and experimentally OpenDroneMap
 <li>GRASS GIS, Python
 </ul>
-<img src="img/edu/hmuavtrimble_grassflight.png">
+<img src="img/edu/uav_flight_plan.jpg" width="80%">
 </section>
 
 <section>
@@ -480,7 +498,7 @@ students generate the images.
 Interacting with software in multiple ways:  
 tutorial with tabs showing the task run through GUI, CLI or python
 <p>
-<img src="img/edu/hmtutorial_tabs.png">
+<img src="img/edu/format_tabs.png">
 <p>
 Example: <a href="http://ncsu-osgeorel.github.io/grass-temporal-workshop/">GRASS as temporal GIS workshop</a>
 <p class="small">http://ncsu-osgeorel.github.io/grass-temporal-workshop/</p>
@@ -516,6 +534,7 @@ and create data set for your region.
       <li>using FOSS4G as a tool, 
       <li>developing FOSS4G by implementing new methods
     </ul>
+<p>
     <li>FOSS4G development: join open community of developers and users
 </ul>
 <p>Our research: Tangible Landscape, Modeling and simulations of dynamic landscapes, 
@@ -537,14 +556,21 @@ Springer International Publishing, to appear in December 2015.
 
 <section>
 <h2>Tangible Landscape</h2>
-disease, termites, FUTURES,
-links to abstracts
+<img src="img/tangible/dam.jpg" style="width: 30%">
+<img src="img/tangible/viewshed.jpg" style="width: 30%">
+<img src="img/tangible/termites.jpg" style="width: 30%">
+<p>
+<a href="http://geospatial.ncsu.edu/osgeorel/publications.html">links to publications</a>
 </section>
 
 <section>
 <h2>Tangible Landscape</h2>
-fire video, add link to more
-<p>see more videos at 
+
+<iframe allowfullscreen width="640" height="390"
+    src="http://www.youtube.com/embed/EJc57GFJeZI?autoplay=1&loop=1&rel=0&playlist=EJc57GFJeZI">
+</iframe>
+<p>
+see more videos at
 <a href="https://plus.google.com/112857255995703553144/videos">NCSU OSGeo REL YouTube channel</a>
 </section>
 
@@ -604,11 +630,12 @@ since 2005, 8500 students (from 101 countries), 8300 mentors, ~$5500 per student
     <li><em>Making geospatial education &amp; solution accessible to all</em>
     <li>establishing research and teaching opportunities
     <li>building global open access teaching infrastructure
-    <li>worldwide network of labs exchanging students and faculty
-    <li>connection to existing organizations: OSGeo Foundation, ICA, ISPRS
+    <li>worldwide labs network, students and faculty exchange
+    <li>based on MOU between OSGeo and ICA, ISPRS
     <li>join at:
         <a href="http://www.geoforall.org/how_to_join">www.geoforall.org/how_to_join</a>
 </ul>
+<br><img src="img/geoforallC.png">
 </section>
 
 <section>
@@ -625,9 +652,9 @@ since 2005, 8500 students (from 101 countries), 8300 mentors, ~$5500 per student
 </ul>
 <p class="small">
  Read more in:
-Petras V., Petrasova A., Harmon B., Meentemeyer RK Mitasova, H, 2015,
+Petras V., Petrasova A., Harmon B., Meentemeyer R.K., Mitasova, H., 2015,
 <em>Integrating Free and Open Source Solutions into Geospatial Science Education</em>.
-ISPRS International Journal of Geo-Information. 2015.  Open Access,
+ISPRS International Journal of Geo-Information. 2015. Open Access,
 <a href="http://dx.doi.org/10.3390/ijgi4020942">doi:10.3390/ijgi4020942</a>
 </p>
 </section>
@@ -691,12 +718,9 @@ FOSS4G Europe 2015 (Como), also delivered at NCSU
         <li>as data source in advanced courses
     </ul>
     <li><a href="http://mapstory.org/">MapStory</a> for student projects
-</ul>
-<ul>
-    <li><a href="http://live.osgeo.org/">OSGeo-Live</a> in VCL for easy lab setup
+    <li><a href="http://live.osgeo.org/">OSGeo-Live</a> in Apache VCL for easy lab setup
     <li><a href="http://imincik.github.io/gis-lab/">GIS.lab</a> for easy lab setup
-    <li>desktop to browser:
-        <a href="https://developer.gnome.org/gtk3/stable/gtk-broadway.html">GTK+ Broadway</a>,
+    <li>desktop to browser:a
         <a href="https://kanaka.github.io/noVNC/">noVNC</a>,
         <a href="https://www.openstack.org/">OpenStack</a> with
         <a href="Open"<a href="https://en.wikipedia.org/wiki/SPICE_%28protocol%29">SPICE</a>
@@ -705,7 +729,7 @@ FOSS4G Europe 2015 (Como), also delivered at NCSU
 
 
 <section>
-<h2>IPython Notebook</h2>
+<h3>IPython Notebook</h3>
 
 <ul>
 <li>IPython Notebook
