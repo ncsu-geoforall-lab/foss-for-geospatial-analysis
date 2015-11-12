@@ -149,6 +149,16 @@
             color: gray;
             margin: 0.1em !important;
         }
+        a.small-link {
+            font-size: smaller !important;
+            color: gray !important;
+            margin: 0.1em !important;
+        }
+        .mini {
+            font-size: small !important;
+            color: gray;
+            margin: 0.1em !important;
+        }
         .credit {
             font-size: small !important;
             color: gray;
@@ -178,31 +188,30 @@
         <br>
         <a href="http://www.ncsu.edu/" title="North Carolina State University.png">NCSU</a>
         <a href="http://geospatial.ncsu.edu/osgeorel/" title="NCSU OSGeo Research and Education Laboratory.png">OSGeoREL</a>
-        at
+        at the
         <a href="http://geospatial.ncsu.edu/" title="Center for Geospatial Analytics website">Center for Geospatial Analytics</a>
         <br>
         North Carolina State University
     </p>
-    <p>November, 2015</p>
-    <p>slides available at <a href="http://geospatial.ncsu.edu/osgeorel/publications.html">geospatial.ncsu.edu/osgeorel</a></p>
+    <p>November 11, 2015</p>
+    <p>UCGIS Webinar</p>
+    <p style="small" >slides available at <a href="http://geospatial.ncsu.edu/osgeorel/publications.html">geospatial.ncsu.edu/osgeorel</a></p>
 </section>
+
 
 <section>
 <h2>What is FOSS?</h2>
-<p>
-<br>
-<h3>Free and Open Source Software</h3>
-<br>
-<p>
+
+<h3 style="margin: 1em 0;">Free and Open Source Software</h3>
+
 <ul>
-   <li> Software that is free to run, study, modify and distribute
-<p>
-   <li> Free means freedom: free is a matter of liberty not price
-<p>
-   <li> It can be commercial (Red Hat Linux) but not proprietary
+   <li style="margin: 0.5em 0;">Software that is free to run, study, modify and distribute
+   <li style="margin: 0.5em 0;">Free means freedom: free is a matter of liberty not price
+   <li style="margin: 0.5em 0;">It can be commercial but not proprietary
 </ul>
 </ul>
 </section>
+
 
 <section>
 <h2>FOSS is everywhere </h2>
@@ -221,15 +230,13 @@ Apple uses software created by the Open Source community and returns its enhance
 &mdash;<a href="https://www.apple.com/opensource/">Apple Inc., 2015</a>
 </blockquote>
 <p>
-Google, Amazon, Facebook, IBM, Major Banks, Internet servers, ESRI all use and contribute
-to FOSS and the community
+Google, Amazon, Facebook, IBM, Red Hat...
+all use and contribute to FOSS and the community
 </section>
+
 
 <section>
 <h2>FOSS is essential in science</h2>
-<!--    <li>Reproducibility and sharing</li>
-<p>replace quote by NSF requirements and similar stuff
--->
 <blockquote>
     <p>
         Software [...] developed as part of novel methods is as important
@@ -240,12 +247,13 @@ to FOSS and the community
         <a href="http://www.nature.com/nmeth/journal/v4/n3/full/nmeth0307-189.html">Social software, Nature Methods 4</a>, 189, 2007
     </p>
 </blockquote>
-<p class"small">Note: making software available to readers does not make it FOSS</p>
+<p class="small">Note: making software available to readers does not make it FOSS</p>
 </section>
+
 
 <section>
 <h2>Geospatial FOSS</h2>
-<p> <b>OSGeo foundation</b> supports the development of FOSS4G
+<p><b>OSGeo foundation</b> supports the development of FOSS4G
 and promotes its widespread use. Example projects:
 <dl>
 <dt>Web Mapping and Desktop Applications</dt>
@@ -258,7 +266,6 @@ and promotes its widespread use. Example projects:
 </dd>
 <dt>Geospatial Libraries and Databases, Metadata Catalogs</dt>
 <dd>
-<!--<a href="http://fdo.osgeo.org">FDO</a>,-->
 <a href="http://gdal.org/">GDAL</a>,
 <a href="http://geos.osgeo.org">GEOS</a>,
 <a href="http://geotools.org/">GeoTools</a>,
@@ -277,6 +284,7 @@ and promotes its widespread use. Example projects:
 -->
 </section>
 
+
 <section>
 <h2>Geospatial FOSS at NCSU</h2>
 
@@ -294,8 +302,10 @@ NCSU OSGeo Research and Education Laboratory:
 <p class="small">
 Note - we discuss only courses where presentation authors are involved.
 -->
-<p> <img src="img/edu/hunt_vis.jpg">
+<p>
+<img src="img/edu/hunt_vis.jpg">
 </section>
+
 
 <section>
 <h2>Course development</h2>
@@ -308,13 +318,14 @@ Note - we discuss only courses where presentation authors are involved.
 </ul>
 </section>
 
+
 <section>
 <h2>Beyond teaching GIS software</h2>
 <ul>
 <p>
-<li><b> Lectures:</b> software-independent, focus on theory, concepts
+<li><b>Lectures:</b> software-independent, focus on theory, concepts
 <p>
-<li><b> Assignments:</b>
+<li><b>Assignments:</b>
     <ul>
         <li>hands-on practice related to lecture topic
         <li><b>students use two different software packages solving similar tasks in both</b>
@@ -326,8 +337,8 @@ Note - we discuss only courses where presentation authors are involved.
 </ul>
 </section>
 
+
 <section>
-<!--<section class="textimg">-->
 <h3>Geospatial Analysis and Modeling course</h3>
 
 <ul>
@@ -340,40 +351,51 @@ Note - we discuss only courses where presentation authors are involved.
 <p>
 <img width="50%" src="img/edu/osgeorel_courses_header.png">
 <img width="40%"src="img/edu/elevation_2d_grassgis_arcgis.jpg">
-<!--
-<img width="45%" src="img/edu/elevation_3d_grassgis_arcgis.jpg">
--->
 </section>
+
 
 <section>
-<h3>Assignments</h3>
-<img src="img/edu/elevation_3d_grassgis_arcgis.jpg">
-<p>REPLACE
-show assignment instructions and the resulting images
-<p class="credit">Makiko Shukunobe, spring 2012 REPLACE with erosion?</p>
+<h3>Assignments: Erosion Modeling</h3>
+<p class="small">Sample lines from instructions and results for GRASS GIS and ArcGIS
+<pre><code>r.mapcalc "sedflow = 270. * Kfac * Cfac * flowacc * sin(slope)"
+r.divergence magn=sedflow dir=aspect out=erosion_deposition
+</code></pre>
+
+<pre><code>Build an expression for sflowtopo:
+"flowacc" * Sin("slope" * math.pi/180.0)
+output raster = sflowtopo
+</code></pre>
+<p>
+<img width="55%" src="img/edu/erdep_grassgis_lily.png">
+<img width="35%" src="img/edu/erdep_arcgis_lily.png">
+<p class="credit">Lilliana Velasquez Montoya, Spring 2014</p>
 </section>
+
 
 <section>
-<h3>Exam</h3>
+<h3>Midterm exam</h3>
 
-<p>REPLACE
-Students develop simple workflows for given tasks:
-example task and results in GRASS and ArcGIS
-<img class="left" src="img/edu/slope_grassgis.jpg">
-<img class="right" src="img/edu/slope_arcgis.jpg">
-<p class="credit">replace with exam</p>
+<p class="small">
+Simple workflows for given problems in GRASS GIS <b>or</b> ArcGIS:
+example least cost path solutions in GRASS and ArcGIS</p>
+<img height="280" src="img/edu/exam_path_vasek_grassgis.png">
+<img height="280" src="img/edu/exam_path_laura_arcgis.png">
+<p class="credit">Vaclav Petras and Laura Belica</p>
 </section>
+
 
 <section>
 <h3>Independent Project</h3>
-<p>REPLACE
-<img class="left" src="img/edu/aspect_grassgis.jpg">
-<img class="right" src="img/edu/aspect_arcgis.jpg">
-<p class="credit">replace with project</p>
+<p>Focused on student's research interests, any geospatial software can be used
+<p class="small">only condition: surface or continuous field component must be included
+<img  height="350" src="img/edu/project_anna.jpg">
+&nbsp &nbsp
+<img  height="350" src="img/edu/project_mkfoley.jpg">
+<p class="credit">Anna Petrasova and Molly Foley</p>
 </section>
 
+
 <section>
-<!--<section class="textimg">-->
 <h3>GIS for Designers</h3>
 GIS as an integral part of the creative design process
 <ul>
@@ -384,12 +406,12 @@ GIS as an integral part of the creative design process
     </ul>
     <li>projects: combination of GIS and design tools 
 </ul>
-<p> 
-<img src="img/edu/hmfinal_review_panorama_1.jpg">
+<p>
+<img src="img/edu/gis_designers_review_panorama.jpg">
 </section>
 
+
 <section>
-<!--<section class="textimg">-->
 <h3>UAV/lidar Data Analytics</h3>
 
 <ul>
@@ -397,8 +419,9 @@ GIS as an integral part of the creative design process
 <li>Agisoft PhotoScan and experimentally OpenDroneMap
 <li>GRASS GIS, Python
 </ul>
-<img src="img/edu/hmuavtrimble_grassflight.png">
+<img src="img/edu/uav_flight_plan.jpg" width="80%">
 </section>
+
 
 <section>
 <h3>UAV/lidar Data Analytics</h3>
@@ -407,9 +430,10 @@ Assignment: Impact of terrain change on water flow, january and june flight
 with corn fields
 <p>
  
-<img width="45%" src="img/edu/hmagisoft_jan.gif">
-<img width="45%" src="img/edu/hmagisoft_june.gif">
+<img width="45%" src="img/edu/rsimwater_agisoft_jan.gif">
+<img width="45%" src="img/edu/rsimwater_agisoft_june.gif">
 </section>
+
 
 <section>
 <h3>Multidimensional Geospatial Modeling</h3>
@@ -428,33 +452,38 @@ Modeling of landscape dynamics using multitemporal georeferenced data and simula
    eye tracking
 </ul>
 <img height="180" src="img/edu/paper_picture.jpg">
-<img height="180" src="img/edu/hmtangis_ccwater.jpg">
+<img height="180" src="img/edu/tangible_landscape_cc_water.jpg">
 </section>
+
 
 <section>
 <h3>Multidimensional Geospatial Modeling</h3>
 Modeling of landscape dynamics using multitemporal data and simulations
 <p>
-<img width="45%" src="img/edu/hmsoilanimationb.gif">
-<img width="45%" src="img/edu/hmsummer_solstice_centennial.gif">
+<img width="45%" src="img/edu/soil_animation.gif">
+<img width="45%" src="img/edu/summer_solstice_centennial.gif">
 <p class="small">Example assignments on subsurface soil moisture and solar radiation </p>
 </section>
+
 
 <section>
 <h3>Course material on-line</h3>
 
 <ul>
     <li><a href="http://geospatial.ncsu.edu/osgeorel/courses.html">Freely and openly available online</a>
-    at <p class="small">geospatial.ncsu.edu/osgeorel</p>
+    <br>
+    <a class="small-link" href="http://geospatial.ncsu.edu/osgeorel/courses.html">geospatial.ncsu.edu/osgeorel</a>
     <li>Managed in Git (GitHub hosted) for revision control, collaboration and sharing 
     <li>Format: HTML/HTML5,  
     <li>License: CC BY-SA
     <li>registered in <a href="http://www.osgeo.org/educational_content">OSGeo Educational Content Inventory</a>
-<p class="small">http://www.osgeo.org/educational_content</p>
+    <br>
+    <a class="small-link" href="www.osgeo.org/educational_content">www.osgeo.org/educational_content</a>
 </ul>
-<br>
-<p class="credit">NCSU MGIST program is undergoing update and re-design</p>
+
+<p class="mini" style="padding-top: 1em;">NCSU MGIST program is undergoing update and re-design</p>
 </section>
+
 
 <section>
 <h3>Keeping assignments up-to-date</h3>
@@ -471,20 +500,22 @@ students generate the images.
         but the names in dialogs are not part of the API, so they change.
     </ul>
 </ul>
-<P>
+<p>
 <img width="80%" src="img/edu/grass_cmd_gui.png">
 </section>
+
 
 <section>
 <h3>Experimental tutorial design</h3>
 Interacting with software in multiple ways:  
 tutorial with tabs showing the task run through GUI, CLI or python
 <p>
-<img src="img/edu/hmtutorial_tabs.png">
+<img src="img/edu/format_tabs.png">
 <p>
 Example: <a href="http://ncsu-osgeorel.github.io/grass-temporal-workshop/">GRASS as temporal GIS workshop</a>
-<p class="small">http://ncsu-osgeorel.github.io/grass-temporal-workshop/</p>
+<a class="small-link" href="http://ncsu-osgeorel.github.io/grass-temporal-workshop/">ncsu-osgeorel.github.io/grass-temporal-workshop/</a>
 </section>
+
 
 <section>
 <h3>Standardized sample datasets</h3>
@@ -507,15 +538,17 @@ Result for North Carolina, Czech Republic and Piemonte (Italy)
 and create data set for your region.
 </section>
 
+
 <section>
 <h2>Research</h2>
 
 <ul>
     <li>research with FOSS4G: 
     <ul>
-      <li>using FOSS4G as a tool, 
+      <li>using FOSS4G as a tool
       <li>developing FOSS4G by implementing new methods
     </ul>
+<p>
     <li>FOSS4G development: join open community of developers and users
 </ul>
 <p>Our research: Tangible Landscape, Modeling and simulations of dynamic landscapes, 
@@ -523,10 +556,11 @@ and create data set for your region.
 </ul>
 </section>
 
+
 <section>
 <h2>Tangible Landscape</h2>
 <p>
-<img src="img/edu/hmtanland_composit.png">
+<img src="img/edu/tangible_landscape_composite.png">
 <p>
 Book: 
 Petrasova, A., Harmon, B., Petras, V., Mitasova, H.
@@ -534,6 +568,7 @@ Petrasova, A., Harmon, B., Petras, V., Mitasova, H.
 Tangible Modeling with Open Source GIS,</a>
 Springer International Publishing, to appear in December 2015.
 </section>
+
 
 <section>
 <h2>Tangible Landscape</h2>
@@ -544,6 +579,7 @@ Springer International Publishing, to appear in December 2015.
 <a href="http://geospatial.ncsu.edu/osgeorel/publications.html">links to publications</a>
 </section>
 
+
 <section>
 <h2>Tangible Landscape</h2>
 
@@ -552,8 +588,9 @@ Springer International Publishing, to appear in December 2015.
 </iframe>
 <p>
 see more videos at
-<a href="https://plus.google.com/112857255995703553144/videos">NCSU OSGeo REL YouTube channel</a>
+<a href="https://www.youtube.com/channel/UCc37pVh-WE46Xkqeq-KZQsA">NCSU OSGeo REL YouTube channel</a>
 </section>
+
 
 <section>
 <h2>Student opportunities</h2>
@@ -564,7 +601,7 @@ see more videos at
     <li>developers and users working together at one place
         on software development, documentation, data
     <li>self organized open participation, supported by OSGeo
-    <li><p class="small"> Examples:
+    <li><p class="small">Examples:
 <!--<a href="http://wiki.osgeo.org/wiki/Bolsena_Code_Sprint_2010">OSGeo Bolsena 2010</a>,
 <a href="http://grass.osgeo.org/wiki/GRASS_Community_Sprint_Prague_2011">GRASS GIS Prague 2011</a>,-->
 <a href="http://vienna2014.sprint.osgeo.org/">OSGeo Vienna 2014</a>,
@@ -582,9 +619,10 @@ see more videos at
 <figure>
 <img src="img/gsoc_2015.png" style="height: 3em">
 </figure>
-since 2005, 8500 students (from 101 countries), 8300 mentors, ~$5500 per students 
+since 2005, 8500 students (from 101 countries), 8300 mentors, ~$5500 per students,
 <a href="http://wiki.osgeo.org/wiki/Google_Summer_of_Code">OSGeo GSoC page</a>
 </section>
+
 
 <section>
 <h2>Tools for open science course</h2>
@@ -600,7 +638,7 @@ since 2005, 8500 students (from 101 countries), 8300 mentors, ~$5500 per student
 <a href="https://opensource.com/" title="Image credit: opensource.com">
 <img src="img/general/open_science.png" width="30%"></a>
 <a href="https://opensource.com/" title="Image credit: opensource.com">
-<img src="img/general/open_up_book.png" width="30%"> </a>
+<img src="img/general/open_up_book.png" width="30%"></a>
 </section>
 
 
@@ -611,12 +649,15 @@ since 2005, 8500 students (from 101 countries), 8300 mentors, ~$5500 per student
     <li><em>Making geospatial education &amp; solution accessible to all</em>
     <li>establishing research and teaching opportunities
     <li>building global open access teaching infrastructure
-    <li>worldwide network of labs exchanging students and faculty
-    <li>connection to existing organizations: OSGeo Foundation, ICA, ISPRS
+    <li>worldwide labs network, students and faculty exchange
+    <li>based on MOU between OSGeo and ICA, ISPRS
     <li>join at:
         <a href="http://www.geoforall.org/how_to_join">www.geoforall.org/how_to_join</a>
 </ul>
+<p>
+<img src="img/geoforallC.png">
 </section>
+
 
 <section>
 <h3>Summary</h3>
@@ -635,9 +676,10 @@ since 2005, 8500 students (from 101 countries), 8300 mentors, ~$5500 per student
 Petras V., Petrasova A., Harmon B., Meentemeyer R.K., Mitasova, H., 2015,
 <em>Integrating Free and Open Source Solutions into Geospatial Science Education</em>.
 ISPRS International Journal of Geo-Information. 2015. Open Access,
-<a href="http://dx.doi.org/10.3390/ijgi4020942">doi:10.3390/ijgi4020942</a>
+<a class="small-link" href="http://dx.doi.org/10.3390/ijgi4020942">doi:10.3390/ijgi4020942</a>
 </p>
 </section>
+
 
 <section>
 <h3>Resources: courses and tutorials</h3>
@@ -659,7 +701,7 @@ ISPRS International Journal of Geo-Information. 2015. Open Access,
 <!--        <li><a href="http://courses.ncsu.edu/lar582/common/">GIS for Designers</a> -->
     </ul>
 </dd>
-<dt> OSGeo Educational Content Inventory
+<dt>OSGeo Educational Content Inventory
 <dd>
 <ul class="small">
     <li>community resources, hosted by OSGeo Foundation
@@ -669,21 +711,23 @@ ISPRS International Journal of Geo-Information. 2015. Open Access,
 </dl>
 </section>
 
+
 <section>
 <h3>Resources: workshops developed at NCSU</h3>
 
 <ul>
-<li> <a href="http://ncsu-osgeorel.github.io/grass-intro-workshop/">Introduction to GRASS GIS</a>,
+<li><a href="http://ncsu-osgeorel.github.io/grass-intro-workshop/">Introduction to GRASS GIS</a>,
 delivered at NCSU
-<li> <a href="http://ncsu-osgeorel.github.io/grass-temporal-workshop/">Spatio-temporal data handling and visualization in GRASS GIS</a>,
+<li><a href="http://ncsu-osgeorel.github.io/grass-temporal-workshop/">Spatio-temporal data handling and visualization in GRASS GIS</a>,
 FOSS4G 2014 (Portland), also delivered at NCSU
-<li> <a href="http://ncsu-osgeorel.github.io/erosion-modeling-tutorial/">Soil erosion and deposition modeling</a>,
+<li><a href="http://ncsu-osgeorel.github.io/erosion-modeling-tutorial/">Soil erosion and deposition modeling</a>,
 tutorial, part of broader project, workflows for GRASS GIS and ArcGIS
-<li> <a href="https://github.com/wenzeslaus/python-grass-addon">How to write a Python GRASS GIS 7 addon</a>,
+<li><a href="https://github.com/wenzeslaus/python-grass-addon">How to write a Python GRASS GIS 7 addon</a>,
 FOSS4G Europe 2015 (Como), also delivered at NCSU
-<li> <span class="small"> Urban growth and open source GIS, planned for US-IALE Asheville 2016
+<li><span class="small">Urban growth and open source GIS, planned for US-IALE Asheville 2016
 </ul>
 </section>
+
 
 <section>
 <h3>Resources: software and platforms</h3>
@@ -700,7 +744,7 @@ FOSS4G Europe 2015 (Como), also delivered at NCSU
     <li><a href="http://mapstory.org/">MapStory</a> for student projects
     <li><a href="http://live.osgeo.org/">OSGeo-Live</a> in Apache VCL for easy lab setup
     <li><a href="http://imincik.github.io/gis-lab/">GIS.lab</a> for easy lab setup
-    <li>desktop to browser:a
+    <li>desktop to browser:
         <a href="https://kanaka.github.io/noVNC/">noVNC</a>,
         <a href="https://www.openstack.org/">OpenStack</a> with
         <a href="Open"<a href="https://en.wikipedia.org/wiki/SPICE_%28protocol%29">SPICE</a>
@@ -709,7 +753,7 @@ FOSS4G Europe 2015 (Como), also delivered at NCSU
 
 
 <section>
-<h2>IPython Notebook</h2>
+<h3>Resources: IPython Notebook</h3>
 
 <ul>
 <li>IPython Notebook
@@ -723,9 +767,16 @@ FOSS4G Europe 2015 (Como), also delivered at NCSU
         <a href="https://github.com/jupyter/tmpnb">tmpnb</a>,
         <a href="https://github.com/jupyter/nbgrader">nbgrader</a>
         (management, grading)
+<li>future format for delivering interactive and reproducible scientific papers?
 </ul>
 </section>
 
+
+<section>
+<h3>Future of education programs at NCSU</h3>
+
+<p>Eric Money, Associate Director of Professional Education</p>
+</section>
 <!-- This is a generated file. Do not edit. -->
         </div>  <!-- slides -->
 
