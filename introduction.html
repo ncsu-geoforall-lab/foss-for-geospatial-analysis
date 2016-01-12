@@ -518,13 +518,17 @@ ZOO-Project or PyWPS <span class="small">(OGC WPS, native support for GRASS GIS)
 <section>
 <h2>GRASS GIS history</h2>
 <ul>
-<li>1983 started at US Army CERL <span class="small">as land management support system</span>
+<li>1983 started at US Army CERL
+    <span class="small">
+        as land management support system,
+        see an <a href="https://www.youtube.com/watch?v=U3Hf0qI4JLc">old promotional video</a>
+    </span>
 <li>evolved into general purpose GIS
 <li>1999 GNU GPL, international team of developers
 <li>30 years of GRASS GIS development in 2013
 <li>check out <a href="https://trac.osgeo.org/grass/timeline">last change</a>
     <span class="small">(probably just few hours ago)</span>
-<li>last release Jul 30, 2015 <span class="small">[last checked Aug 2015]</span>
+<li>last release Nov 19, 2015 <span class="small">[last checked Jan 2016]</span>
 </ul>
 <figure>
 <img src="img/grass_logo_ancient.png" style="width: 25%">
@@ -588,23 +592,23 @@ ZOO-Project or PyWPS <span class="small">(OGC WPS, native support for GRASS GIS)
     <dl class="small">
         <dt>raster and 3D raster</dt>
         <dd>
-            map algebra, DEM, flow, neighborhood, solar, cost surfaces
+            map algebra, DEM, interpolation, flow, neighborhood, solar, cost surfaces
         </dd>
         <dt>imagery</dt>
         <dd>
-            rectification, multispectral, reclassification, FFT
+            rectification, multispectral, classification, segmentation, FFT
         </dd>
         <dt>vector and database</dt>
         <dd>
             buffers, overlays, conversions, networks, attribute management, SQL
         </dd>
-        <dt>transformations</dt>
+        <dt>spatio-temporal</dt>
         <dd>
-            projections, raster-vector conversions, interpolation
+            temporal topology, algebra, sampling, statistics, aggregation
         </dd>
         <dt>visualization</dt>
         <dd>
-            2D display, 3D visualization, PS and PDF maps
+            2D display, 3D visualization, temporal visualization, PS and PDF maps
         </dd>
         <dt>interoperability</dt>
         <dd>
@@ -639,7 +643,7 @@ ZOO-Project or PyWPS <span class="small">(OGC WPS, native support for GRASS GIS)
         <li>Graphical User Interface (now wxGUI, other GUIs in the past)
         <li>Command Line Interface (examples in manual)
         <li>Application Programming Interface (C for hard work, Python for scripting)
-        <li>designed for easy transition in between the interfaces
+        <li>designed for easy transition between the interfaces
     </ul>
     <li>computational region
     <ul>
