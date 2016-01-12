@@ -15,7 +15,7 @@ if [ -d $build_dir/.git ]; then
     exit 1
 fi
 
-rm -r $build_dir
+rm -r $build_dir || true
 
 git clone $remote $build_dir
 
