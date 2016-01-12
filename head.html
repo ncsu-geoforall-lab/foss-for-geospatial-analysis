@@ -36,8 +36,20 @@
         <![endif]-->
 
         <style>
+        @font-face {
+            font-family: 'fira_sansregular';
+            src: url('lib/font/firasans-regular/firasans-regular-webfont.eot');
+            src: url('lib/font/firasans-regular/firasans-regular-webfont.eot?#iefix') format('embedded-opentype'),
+                 url('lib/font/firasans-regular/firasans-regular-webfont.woff2') format('woff2'),
+                 url('lib/font/firasans-regular/firasans-regular-webfont.woff') format('woff'),
+                 url('lib/font/firasans-regular/firasans-regular-webfont.ttf') format('truetype'),
+                 url('lib/font/firasans-regular/firasans-regular-webfont.svg#fira_sansregular') format('svg');
+            font-weight: normal;
+            font-style: normal;
+        }
         * {
-            /*font-family: Verdana, Geneva, sans-serif !important;*/
+            font-family: fira_sansregular, sans-serif !important;
+            font-feature-settings: "liga" 0;  /* ligs doesn't work in FF */
         }
         body {
         /*background-color: #FFF !important;*/
